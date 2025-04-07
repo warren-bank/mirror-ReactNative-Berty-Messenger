@@ -1,0 +1,935 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Wesh Protocol &#xB7; Berty Technologies</title><meta http-equiv="Content-Language" content="en"><link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js"><script async src="https://cdn.ampproject.org/v0.js"></script><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><script async custom-element="amp-mathml" src="https://cdn.ampproject.org/v0/amp-mathml-0.1.js"></script><style>@font-face{font-family:Font Awesome\ 5 Brands;font-style:normal;font-weight:400;font-display:swap;src:url(../../fonts/fa-brands-400.eot);src:url(../../fonts/fa-brands-400.eot@) format("embedded-opentype"),url(../../fonts/fa-brands-400.woff2) format("woff2"),url(../../fonts/fa-brands-400.woff) format("woff"),url(../../fonts/fa-brands-400.ttf) format("truetype"),url(../../fonts/fa-brands-400.svg) format("svg")}@font-face{font-family:Font Awesome\ 5 Duotone;font-style:normal;font-weight:900;font-display:swap;src:url(../../fonts/fa-duotone-900.eot);src:url(../../fonts/fa-duotone-900.eot@) format("embedded-opentype"),url(../../fonts/fa-duotone-900.woff2) format("woff2"),url(../../fonts/fa-duotone-900.woff) format("woff"),url(../../fonts/fa-duotone-900.ttf) format("truetype"),url(../../fonts/fa-duotone-900.svg) format("svg")}@font-face{font-family:Font Awesome\ 5 Pro;font-style:normal;font-weight:300;font-display:swap;src:url(../../fonts/fa-light-300.eot);src:url(../../fonts/fa-light-300.eot@) format("embedded-opentype"),url(../../fonts/fa-light-300.woff2) format("woff2"),url(../../fonts/fa-light-300.woff) format("woff"),url(../../fonts/fa-light-300.ttf) format("truetype"),url(../../fonts/fa-light-300.svg) format("svg")}@font-face{font-family:Font Awesome\ 5 Pro;font-style:normal;font-weight:400;font-display:swap;src:url(../../fonts/fa-regular-400.eot);src:url(../../fonts/fa-regular-400.eot@) format("embedded-opentype"),url(../../fonts/fa-regular-400.woff2) format("woff2"),url(../../fonts/fa-regular-400.woff) format("woff"),url(../../fonts/fa-regular-400.ttf) format("truetype"),url(../../fonts/fa-regular-400.svg) format("svg")}@font-face{font-family:Font Awesome\ 5 Pro;font-style:normal;font-weight:900;font-display:swap;src:url(../../fonts/fa-solid-900.eot);src:url(../../fonts/fa-solid-900.eot@) format("embedded-opentype"),url(../../fonts/fa-solid-900.woff2) format("woff2"),url(../../fonts/fa-solid-900.woff) format("woff"),url(../../fonts/fa-solid-900.ttf) format("truetype"),url(../../fonts/fa-solid-900.svg) format("svg")}@font-face{font-family:slick;font-weight:400;font-style:normal;font-display:swap;src:url(../../fonts/slick.eot);src:url(../../fonts/slick.eot@) format("embedded-opentype"),url(../../fonts/slick.woff) format("woff"),url(../../fonts/slick.ttf) format("truetype"),url(../../fonts/slick.svg) format("svg")}@font-face{font-family:Roboto Slab;font-weight:400;font-style:normal;font-display:swap;src:url(../../fonts/roboto-slap-v9-latin-regular.eot);src:url(../../fonts/roboto-slap-v9-latin-regular.eot?) format("embedded-opentype"),url(../../fonts/roboto-slap-v9-latin-regular.woff) format("woff"),url(../../fonts/roboto-slap-v9-latin-regular.ttf) format("truetype"),url(../../fonts/roboto-slap-v9-latin-regular.svg) format("svg")}@font-face{font-family:Roboto Slab;font-weight:700;font-style:normal;font-display:swap;src:url(../../fonts/roboto-slap-v9-latin-700.eot);src:url(../../fonts/roboto-slap-v9-latin-700.eot?) format("embedded-opentype"),url(../../fonts/roboto-slap-v9-latin-700.woff) format("woff"),url(../../fonts/roboto-slap-v9-latin-700.ttf) format("truetype"),url(../../fonts/roboto-slap-v9-latin-700.svg) format("svg")}@font-face{font-family:Source Sans Pro;font-weight:400;font-style:normal;font-display:swap;src:url(../../fonts/source-sans-pro-v13-latin-regular.eot);src:url(../../fonts/source-sans-pro-v13-latin-regular.eot@) format("embedded-opentype"),url(../../fonts/source-sans-pro-v13-latin-regular.woff) format("woff"),url(../../fonts/source-sans-pro-v13-latin-regular.ttf) format("truetype"),url(../../fonts/source-sans-pro-v13-latin-regular.svg) format("svg")}@font-face{font-family:Source Sans Pro;font-weight:600;font-style:normal;font-display:swap;src:url(../../fonts/source-sans-pro-v13-latin-600.eot);src:url(../../fonts/source-sans-pro-v13-latin-600.eot@) format("embedded-opentype"),url(../../fonts/source-sans-pro-v13-latin-600.woff) format("woff"),url(../../fonts/source-sans-pro-v13-latin-600.ttf) format("truetype"),url(../../fonts/source-sans-pro-v13-latin-600.svg) format("svg")}
+
+      /*!* Bootstrap v4.3.1 (https://getbootstrap.com/)
+* Copyright 2011-2019 The Bootstrap Authors
+* Copyright 2011-2019 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*/:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,:after,:before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}figcaption,figure,footer,header,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}[tabindex="-1"]:focus{outline:0}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}ol,p,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}blockquote{margin:0 0 1rem}strong{font-weight:bolder}small{font-size:80%}a{color:#007bff;text-decoration:none;background-color:transparent}a:hover{color:#0056b3;text-decoration:underline}a:not([href]):not([tabindex]){color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus{outline:0}code,pre{font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;font-size:1em}pre{margin-top:0;margin-bottom:1rem;overflow:auto}figure{margin:0 0 1rem}img{vertical-align:middle;border-style:none}table{border-collapse:collapse}th{text-align:inherit}button{border-radius:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}button,input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;overflow:visible}button{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=date],input[type=month],input[type=time]{-webkit-appearance:listbox}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:none}[type=search]::-webkit-search-decoration{-webkit-appearance:none}[hidden]{display:none}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-weight:500;line-height:1.2}.h1,h1{font-size:2.5rem}.h2,h2{font-size:2rem}.h3,h3{font-size:1.75rem}.h4,h4{font-size:1.5rem}.h5,h5{font-size:1.25rem}.h6,h6{font-size:1rem}.small,small{font-size:80%;font-weight:400}.list-unstyled{padding-left:0;list-style:none}.blockquote{margin-bottom:1rem;font-size:1.25rem}.img-fluid{max-width:100%;height:auto}.figure{display:inline-block}code{font-size:87.5%;color:#e83e8c;word-break:break-word}a>code{color:inherit}pre{display:block;font-size:87.5%;color:#212529}pre code{font-size:inherit;color:inherit;word-break:normal}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media(min-width:576px){.container{max-width:540px}}@media(min-width:768px){.container{max-width:720px}}@media(min-width:992px){.container{max-width:960px}}@media(min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-4,.col-lg-4,.col-lg-8,.col-md-2,.col-md-5,.col-md-7,.col-md-10{position:relative;width:100%;padding-right:15px;padding-left:15px}.col-4{flex:0 0 33.333333%;max-width:33.333333%}@media(min-width:768px){.col-md-2{flex:0 0 16.666667%;max-width:16.666667%}.col-md-5{flex:0 0 41.666667%;max-width:41.666667%}.col-md-7{flex:0 0 58.333333%;max-width:58.333333%}.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}}@media(min-width:992px){.col-lg-4{flex:0 0 33.333333%;max-width:33.333333%}.col-lg-8{flex:0 0 66.666667%;max-width:66.666667%}}.table{width:100%;margin-bottom:1rem;color:#212529}.table td,.table th{padding:.75rem;vertical-align:top;border-top:1px solid #dee2e6}.table thead th{vertical-align:bottom;border-bottom:2px solid #dee2e6}.table tbody+tbody{border-top:2px solid #dee2e6}.table-bordered,.table-bordered td,.table-bordered th{border:1px solid #dee2e6}.table-bordered thead td,.table-bordered thead th{border-bottom-width:2px}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media(prefers-reduced-motion:reduce){.btn{transition:none}}.btn:hover{color:#212529;text-decoration:none}.btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}.btn:disabled{opacity:.65}.collapse:not(.show){display:none}.collapsing{position:relative;height:0;overflow:hidden;transition:height .35s ease}@media(prefers-reduced-motion:reduce){.collapsing{transition:none}}.dropdown{position:relative}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#212529;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}.dropdown-divider{height:0;margin:.5rem 0;overflow:hidden;border-top:1px solid #e9ecef}.dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:#212529;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.dropdown-item:focus,.dropdown-item:hover{color:#16181b;text-decoration:none;background-color:#f8f9fa}.dropdown-item:active{color:#fff;text-decoration:none;background-color:#007bff}.dropdown-item:disabled{color:#6c757d;pointer-events:none;background-color:transparent}.dropdown-menu.show{display:block}.nav{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.nav-link{display:block;padding:.5rem 1rem}.nav-link:focus,.nav-link:hover{text-decoration:none}.navbar{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.5rem 1rem}.navbar>.container{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-brand:focus,.navbar-brand:hover{text-decoration:none}.navbar-nav{display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static;float:none}.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler:focus,.navbar-toggler:hover{text-decoration:none}@media(max-width:767.98px){.navbar-expand-md>.container{padding-right:0;padding-left:0}}@media(min-width:768px){.navbar-expand-md{flex-flow:row nowrap;justify-content:flex-start}.navbar-expand-md .navbar-nav{flex-direction:row}.navbar-expand-md .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-md .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-md>.container{flex-wrap:nowrap}.navbar-expand-md .navbar-collapse{display:flex;flex-basis:auto}.navbar-expand-md .navbar-toggler{display:none}}.navbar-dark .navbar-brand{color:#fff}.navbar-dark .navbar-brand:focus,.navbar-dark .navbar-brand:hover{color:#fff}.navbar-dark .navbar-nav .nav-link{color:hsla(0,0%,100%,.5)}.navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover{color:hsla(0,0%,100%,.75)}.navbar-dark .navbar-nav .nav-link.show,.navbar-dark .navbar-nav .show>.nav-link{color:#fff}.navbar-dark .navbar-toggler{color:hsla(0,0%,100%,.5);border-color:hsla(0,0%,100%,.1)}@keyframes progress-bar-stripes{0%{background-position:1rem 0}to{background-position:0 0}}@keyframes spinner-border{to{transform:rotate(1turn)}}@keyframes spinner-grow{0%{transform:scale(0)}50%{opacity:1}}.d-none{display:none}.d-flex{display:flex}.flex-column{flex-direction:column}.justify-content-end{justify-content:flex-end}.justify-content-between{justify-content:space-between}.align-items-center{align-items:center}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mb-3{margin-bottom:1rem}.px-3{padding-right:1rem;padding-left:1rem}@media(min-width:768px){.px-md-0{padding-right:0;padding-left:0}}.text-center{text-align:center}.text-white{color:#fff}.text-secondary{color:#6c757d}a.text-secondary:focus,a.text-secondary:hover{color:#494f54}@media print{*,:after,:before{text-shadow:none;box-shadow:none}a:not(.btn){text-decoration:underline}pre{white-space:pre-wrap}blockquote,pre{border:1px solid #adb5bd;page-break-inside:avoid}thead{display:table-header-group}img,tr{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}@page{size:a3}.container,body{min-width:992px}.navbar{display:none}.table{border-collapse:collapse}.table td,.table th{background-color:#fff}.table-bordered td,.table-bordered th{border:1px solid #dee2e6}}/*!* Font Awesome Pro 5.10.2 by @fontawesome - https://fontawesome.com
+* License - https://fontawesome.com/license (Commercial License)*/.fab,.fal,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}@keyframes fa-spin{0%{transform:rotate(0)}to{transform:rotate(1turn)}}.fa-align-left:before{content:"\f036"}.fa-arrow-left:before{content:"\f060"}.fa-bars:before{content:"\f0c9"}.fa-chevron-down:before{content:"\f078"}.fa-code-branch:before{content:"\f126"}.fa-cubes:before{content:"\f1b3"}.fa-discord:before{content:"\f392"}.fa-envelope-open-text:before{content:"\f658"}.fa-github:before{content:"\f09b"}.fa-heart:before{content:"\f004"}.fa-laptop-code:before{content:"\f5fc"}.fa-linkedin:before{content:"\f08c"}.fa-medium:before{content:"\f23a"}.fa-newspaper:before{content:"\f1ea"}.fa-paper-plane:before{content:"\f1d8"}.fa-photo-video:before{content:"\f87c"}.fa-store:before{content:"\f54e"}.fa-twitter:before{content:"\f099"}.fab{font-family:font awesome\ 5 brands}.fal{font-weight:300}.fal,.far{font-family:font awesome\ 5 pro}.far{font-weight:400}.fas{font-family:font awesome\ 5 pro;font-weight:900}.slick-slider{box-sizing:border-box;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list,.slick-slider{position:relative;display:block}.slick-list{overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:none}.slick-slider .slick-list,.slick-slider .slick-track{transform:translateZ(0)}.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}.slick-track:after,.slick-track:before{display:table;content:""}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}body{font-family:source sans pro,sans-serif;letter-spacing:.2px;color:#383b62;background-color:#fcfcff;position:relative}a{color:#3f49ea}h6{font-size:1.2rem;margin-top:5px;margin-bottom:5px}.btn:active,button:active,button:focus,button:hover,input:active,input:focus,input:hover{outline:0;-webkit-appearance:none;box-shadow:none}blockquote{color:#3f49ea;border-left:5px solid #3f49ea;background-color:#f2f3ff;padding:10px 20px;border-radius:3px 5px 5px 3px;margin-top:20px}blockquote p{margin:0}amp-img{vertical-align:middle}.overflow-hidden{overflow:hidden}.c-blue{color:#3f49ea}.bg-white{background-color:#fff}.bg-blue{background-color:#525bec}.bg-blue.gradient{background:radial-gradient(#5b64f0,#3f49ea)}.bg-docs:before,.bg-particles:before{content:"";position:absolute;top:0;width:100%;height:100%;background-repeat:repeat;background-size:930px}.bg-particles:before{background-image:url(../../img/bg_particles.svg)}.bg-docs:before{background-image:url(../../img/bg_docs.svg);opacity:.8}.page-doc .bg-docs:before{background-image:url(../../img/bg_docs.svg)}.bg-about:before,.bg-contact:before,.bg-download:before{content:"";position:absolute;top:-40px;right:30px;width:600px;height:600px;background-repeat:no-repeat;background-size:100%;opacity:.5}.bg-about:before{background-image:url(../../img/bg_about.svg);transform:rotate(5deg)}.bg-download:before{background-image:url(../../img/bg_download.svg)}.bg-contact:before{background-image:url(../../img/bg_contact.svg);width:500px;height:500px;transform:rotate(10deg);top:-100px;right:80px}.navbar{padding:1rem;z-index:3;font-size:120%}.navbar .img-berty{width:120px;opacity:.95}.navbar .img-berty:focus,.navbar .img-berty:hover{opacity:1}.navbar .nav-link{padding-right:15px}.navbar .nav-link i.fa-chevron-down{font-size:13px;margin-left:4px}.navbar .dropdown-menu{border-radius:12px;border:none;box-shadow:0 6px 15px rgba(171,174,209,.3);top:120%;right:-45px;left:auto;padding:25px 0}.navbar .dropdown-menu .dropdown-item{opacity:.8}.navbar .dropdown-menu .dropdown-item span{color:#383b62}.navbar .dropdown-menu .dropdown-item .title{font-size:1.1rem}.navbar .dropdown-menu .dropdown-item.l{padding:15px 34px;position:relative}.navbar .dropdown-menu .dropdown-item.l i{margin-top:4px}.navbar .dropdown-menu .dropdown-item.l i,.navbar .dropdown-menu .dropdown-item.l img{font-size:36px;position:absolute;width:46px;text-align:center}.navbar .dropdown-menu .dropdown-item.l .title{padding-left:60px;display:block}.navbar .dropdown-menu .dropdown-item.l .subtitle{padding-left:60px;font-size:.8rem;opacity:.7;margin-top:-3px;display:block}.navbar .dropdown-menu .dropdown-item.f{padding:15px 34px 0 40px}.navbar .dropdown-menu .dropdown-item.f i.fa-github{font-size:20px;margin-right:10px}.navbar .dropdown-menu .dropdown-item.f .title{vertical-align:bottom}.navbar .dropdown-menu .dropdown-item:focus,.navbar .dropdown-menu .dropdown-item:hover{background-color:#fcfcff;color:#383b62;opacity:1}.navbar .dropdown-menu:after{content:"";width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:13px solid #fff;position:absolute;top:-13px;right:83px}.navbar .nav-block-partners{flex-wrap:wrap;padding:0 28px 16px;gap:12px}.navbar .nav-block-partners>a{width:calc(50% - 6px);border-radius:12px;padding:12px;background:#f7f7fe;text-align:center;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;align-items:center;transition:all .2s ease}.navbar .nav-block-partners>a img{width:fit-content}.navbar .nav-block-partners>a p{margin-bottom:0;margin-top:8px;color:#383b62;text-align:center;font-size:13px;font-family:Source Sans Pro;line-height:16px;letter-spacing:.16px}.navbar .nav-block-partners>a:hover{background:#efeffc}.navbar-dark .navbar-nav .nav-link{color:hsla(0,0%,100%,.7)}.navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover{color:#fff;text-decoration:none}.navbar-dark .navbar-toggler{border:none;font-size:1.5rem;color:#fff}amp-sidebar{background-color:#fff}amp-sidebar .nav-brand{display:block;width:121px;margin:21px 69px 15px 23px}amp-sidebar .nav{margin:10px 10px 30px;min-width:170px;font-size:17px}amp-sidebar .nav-section{margin:25px 15px 0}amp-sidebar .nav-item{margin:0 14px}amp-sidebar .nav-link{padding:14px 14px 14px 7px;color:#383b62;border-bottom:1px solid #eaebec}amp-sidebar .nav-link i{width:20px;font-size:18px;margin-right:10px;text-align:center}amp-sidebar .nav-link img{width:25px;margin-right:6px}amp-sidebar .nav-link .title{opacity:.7}.btn,a{transition:.3s ease-in-out}.btn-bty{border-radius:9px;padding:9px 18px}.btn-bty i{margin:0 8px 0 0}.btn-bty.btn-blue{color:#3f49ea;background-color:#e2e4fc}.btn-bty.btn-blue:focus,.btn-bty.btn-blue:hover{color:#fff;background-color:#3f49ea}.btn-bty.btn-grack{color:#fff;background-color:#525361}.btn-bty.btn-grack:focus,.btn-bty.btn-grack:hover{color:#fff;background-color:#414252}.btn-bty:hover .hover-show{display:inherit}.btn-bty:hover .hover-hide{display:none}.btn-bty .hover-show{display:none}.btn-bty .hover-hide{display:inherit}.btn-transparent{color:#fff;background-color:transparent;opacity:.7;border:2px solid #fff}.btn-transparent:focus,.btn-transparent:hover{color:#fff;opacity:1}.block-doc-content img{max-width:100%}.wh header{margin:80px 0 30px}.wh header h1{font-weight:600;letter-spacing:1.5px;font-size:2.4rem}.wh .content{display:block;margin:70px 0 50px}header.header-rounded{margin:-78px 0 0;color:#fff;border-radius:0 0 50px 50px;position:relative;overflow:hidden}header.header-rounded>.container{position:relative;z-index:2}header.header-rounded .subtitle{margin-top:20px;opacity:.8}header.header-rounded.small{padding:100px 0 90px}.wh .content{margin-top:0}section.section-id{margin:-60px 0 50px}section.section-actions h2{padding:50px 0}@keyframes bounce-left{0%{top:138px}to{top:142px}}@keyframes bounce-right{0%{top:43px}to{top:37px}}.page-doc .content{display:block}.page-doc .content .block.block-doc-content{margin-top:-70px;padding:50px;border-radius:12px;word-wrap:break-word;position:relative;height:auto}.page-doc .content .block.block-doc-content h1,.page-doc .content .block.block-doc-content h2{border-bottom:1px solid #dee2e6;padding-bottom:6px;margin-bottom:15px}.page-doc .content .block.block-doc-content h2{margin-top:35px}.page-doc .content .block.block-doc-content h3{margin-top:30px}.page-doc .content .block.block-doc-content h4{margin-top:25px}.page-doc .content .block.block-doc-content h5{margin-top:20px}.page-doc .content .block.block-doc-content h6{margin-top:15px}.page-doc .content .block.block-doc-content h1:before,.page-doc .content .block.block-doc-content h2:before,.page-doc .content .block.block-doc-content h3:before,.page-doc .content .block.block-doc-content h4:before,.page-doc .content .block.block-doc-content h5:before,.page-doc .content .block.block-doc-content h6:before{display:block;content:" ";height:15px;margin-top:-15px;visibility:hidden}.page-doc .content .block.block-doc-content pre:not(.chroma){display:block;padding:15px 20px;border-radius:12px;background-color:#f6f6f7;color:#696b86;overflow-x:scroll}.page-doc .content .block.block-doc-content blockquote{border-left:5px solid #3f49ea;background-color:#f2f3ff;color:#3f49ea;padding:10px 20px;border-radius:3px 5px 5px 3px}.page-doc .content .block.block-doc-content blockquote p{margin:0 0 10px}.page-doc .content .block.block-doc-content blockquote i{margin-right:10px}.page-doc .content .block.block-doc-content blockquote.yellow{border-left:5px solid #ffae3a;color:#ffae3a;background-color:#fff0d4}.page-doc .content .block.block-doc-content code{color:#696b86;font-family:monospace;font-size:110%}.page-doc .content .block.block-doc-content p>code{padding:5px}.page-doc .content .block.block-doc-content ol,.page-doc .content .block.block-doc-content ul{padding-left:24px}.page-doc .content .block.block-doc-content ol li,.page-doc .content .block.block-doc-content ul li{margin:5px 0}.page-doc .content .block.block-doc-content table{color:#383b62;overflow-x:scroll}table td,table th{border:1px solid #dee2e6}.block-doc-nav{margin:20px -15px 15px -5px;font-size:13px;position:sticky;top:15px}.block-doc-nav ul li{list-style:none;padding:3px 0}.block-doc-nav .js-toc{overflow-y:auto;margin-top:20px}.block-doc-nav .js-toc>.toc-list{overflow:hidden;position:relative;padding-left:14px}.block-doc-nav .toc-list{margin:0;padding-left:10px}.block-doc-nav a.toc-link{height:100%;color:#737491}.block-doc-nav a.toc-link:focus,.block-doc-nav a.toc-link:hover{color:#383b62;text-decoration:none}.block-doc-nav a.toc-link:before{background-color:#dee2e6;content:" ";display:inline-block;height:inherit;left:0;margin-top:-1px;position:absolute;width:2px}.block-doc-nav a.toc-link.is-active-link{font-weight:700;color:#3f49ea}.block-doc-nav a.toc-link.is-active-link:before{background-color:#3f49ea}.block-doc-nav .is-collapsible{max-height:1000px;overflow:hidden;transition:all .25s ease-in-out}.block-doc-nav .is-collapsed{max-height:0}.block-doc-nav .is-position-fixed{position:fixed;top:0}.anchor-heading{position:relative}.anchor-heading .anchor-link{opacity:0;margin-left:10px;font-weight:700;position:absolute;left:-30px}.anchor-heading:hover .anchor-link{opacity:1}.anchor-heading:hover .anchor-link:focus,.anchor-heading:hover .anchor-link:hover{text-decoration:none}.tag{padding:4px 12px;border-radius:4px;font-size:90%}.tag i{margin-right:6px}.tag.pink{color:#f64278;background-color:#fee4e9}.tag.yellow{color:#ffae3a;background-color:#fff0d4}.tag.blue{color:#3f49ea;background-color:#e2e4fc}.block{border-radius:12px;box-shadow:0 6px 15px rgba(171,174,209,.3);font-weight:400;display:block;position:relative;padding:25px}.block-id{text-align:center;margin:0 auto}.block-id .block-id-avatar{margin:-82px auto 10px;height:90px;width:90px;background-color:#e2e4fc;color:#3f49ea;border-radius:50%;border:4px solid #fff;font-size:35px;letter-spacing:3px;padding:14px 0;text-align:center;box-shadow:0 2px 8px rgba(39,44,49,.2);text-transform:uppercase}.block-id .block-id-name{font-size:20px;margin-bottom:20px}.block-id .block-id-qrcode{display:block}.block-id .block-id-qrcode img{margin:0 auto}.block-id.block-error .block-id-avatar{color:#f64278;background-color:#fee4e9}.block-id.block-error .block-id-name{color:#f64278;margin-top:30px}a.block-action{color:#fff;padding:34px;margin-bottom:30px}a.block-action h4{margin-bottom:0;padding-left:52px}a.block-action h4 i.left{font-size:32px;position:absolute;top:31px;left:34px}a.block-action:focus,a.block-action:hover{text-decoration:none}footer{font-size:95%;padding-top:100px}footer .footer-rounded{position:relative;padding:95px 0 70px}footer .text-white,footer .text-white a{color:hsla(0,0%,100%,.7)}footer .text-white .list-unstyled a{color:hsla(0,0%,100%,.5)}footer .text-white a:focus,footer .text-white a:hover{color:#fff;text-decoration:none}footer .img-bt{max-width:45%;margin-top:-6px}footer .footer-legal{margin-top:9px}footer .nav-social .nav-item{font-size:115%}.slick-loading .slick-list{background:#fff url(../../img/ajax-loader.gif)50% no-repeat}.slick-next,.slick-prev{font-size:0;line-height:0;position:absolute;top:50%;display:block;width:50px;height:50px;padding:0;transform:translateY(-50%);cursor:pointer;color:transparent;border:none;outline:none;background:#e2e4fc;border-radius:50%}.slick-next:focus,.slick-next:hover,.slick-prev:focus,.slick-prev:hover{color:transparent;outline:none;background:#3f49ea}.slick-next:focus:before,.slick-next:hover:before,.slick-prev:focus:before,.slick-prev:hover:before{opacity:1;color:#fff}.slick-next.slick-disabled:before,.slick-prev.slick-disabled:before{opacity:.25}.slick-next:before,.slick-prev:before{font-family:font awesome\ 5 pro;font-size:16px;line-height:1;opacity:1;color:#3f49ea;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.slick-prev{left:-50px}.slick-prev:before{content:"\f060"}.slick-next{right:-50px}.slick-next:before{content:"\f061"}.slick-dotted.slick-slider{margin-bottom:30px}.slick-dots{position:absolute;bottom:-40px;display:block;width:100%;padding:0;margin:0;list-style:none;text-align:center}.slick-dots li{position:relative;display:inline-block;margin:0 5px;padding:0}.slick-dots li,.slick-dots li button{width:20px;height:20px;cursor:pointer}.slick-dots li button{font-size:0;line-height:0;display:block;padding:5px;color:transparent;border:0;outline:none;background:0 0}.slick-dots li button:focus,.slick-dots li button:hover{outline:none}.slick-dots li button:focus:before,.slick-dots li button:hover:before{opacity:1}.slick-dots li button:before{font-family:slick;font-size:12px;line-height:20px;position:absolute;top:0;left:0;width:20px;height:20px;content:"•";text-align:center;opacity:.25;color:#525bec;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.slick-dots li.slick-active button:before{opacity:1;color:#525bec}@media(max-width:1199px){footer .nav-social .nav-link{padding-left:.8rem;padding-right:.8rem}}@media(max-width:1069px){.slick-next,.slick-prev{display:none;width:0}.slick-next:before,.slick-prev:before{display:none}}@media(max-width:991px){footer{padding-top:0}footer .footer-rounded{padding:50px 0 30px}footer .img-bt{margin:-10px 0;max-width:55%}}@media(max-width:767.98px) and (min-width:576px){.navbar-brand{margin-left:15px}}@media(max-width:767px){h2{font-size:1.7rem}h3{font-size:1.5rem}h4{font-size:1.3rem}h5{font-size:1.2rem}h6{font-size:1.1rem}.wh header h1{letter-spacing:1px;font-size:1.9rem}header.header-rounded{border-radius:0 0 20px 20px}header.header-rounded.small{padding:75px 0 3px}header.header-rounded .subtitle{margin-bottom:60px}a.block-action{padding:20px;margin-bottom:20px}a.block-action h4{padding-left:43px}a.block-action h4 i.left{font-size:28px;position:absolute;top:18px;left:20px}.bg-about:before,.bg-contact:before,.bg-download:before{top:5px;right:-45px;width:400px;height:400px;opacity:.3}.page-doc .subnav{display:none}.page-doc .section-actions.d-none{display:block}.page-doc .content .block-doc-nav{display:none}.page-doc .content .block.block-doc-content{box-shadow:none;padding:0;margin-top:20px;margin-bottom:20px}footer{text-align:center;font-size:85%}footer .img-bt{margin:-15px auto}footer .col-links{margin-top:6px}footer .col-links .list-unstyled li{margin:8px 0}footer .nav-social{margin:20px 30px 0}footer .nav-social .nav-item{flex-basis:0;flex-grow:1;text-align:center}.anchor-heading .anchor-link{opacity:1;margin-left:0;left:auto;right:0}.page-doc .content .block.block-doc-content .anchor-heading .anchor-link{top:15px}}@media(max-width:425px){.bg-docs:before{opacity:.65}.bg-about:before,.bg-contact:before,.bg-download:before{opacity:.2}.page-doc .content h1,.page-doc .content h2,.page-doc .content h3{margin-bottom:1.1rem}.page-doc .content h1{font-size:2rem}.page-doc .content h2{font-size:1.8rem}.page-doc .content p,.page-doc .content ul{font-size:.9rem;margin-bottom:1.5rem}footer h5{font-size:.9rem;margin-bottom:12px}}@media(max-width:374px){.block-id .block-id-qrcode{padding:5px}.block-id.block-error .block-id-name h4{font-size:1.3rem;padding:0 10px}}@media(max-width:350px){.block.block-id{box-shadow:none;padding:25px 5px}}@media(min-width:992px){footer .footer-rounded{width:140%;margin-left:-20%;margin-right:0;border-radius:309.5px 309.5px 0 0}footer .footer-rounded:before{content:"";position:absolute;left:0;top:-4%;width:110%;height:102%;display:block;background-color:#c5c8f8;border-radius:311.85px 341.85px 0 0;z-index:-1}footer .row-top{margin-bottom:30px}}@media screen and (min-width:1300px){footer .footer-rounded{width:140%;margin-left:-20%;margin-right:0;border-radius:609.5px 609.5px 0 0}footer .footer-rounded:before{content:"";position:absolute;left:0;top:-4%;width:110%;height:102%;display:block;background-color:#c5c8f8;border-radius:641.85px 641.85px 0 0;z-index:-1}footer .row-top{margin-bottom:30px}}@media screen and (min-width:1700px){footer .footer-rounded{width:130%;margin-left:-15%}}@media(min-width:768px){footer .nav-social{justify-content:flex-end}}@media(hover:hover){a.block-action{transition:.3s ease-in-out}a.block-action:hover{transform:translateY(-5px);box-shadow:0 12px 18px rgba(171,174,209,.45)}}.display-none{display:none}.highlight>pre{padding:30px}@media(max-width:768px){.highlight>pre{padding:15px}}.block-id-qrcode img{width:180px;height:180px}.block-id{padding:28px 42px 22px;box-shadow:0 4px 12px 2px rgba(0,0,0,.03);border-radius:25px;margin-bottom:21px;margin-left:0;max-width:328px}@media only screen and (max-width:767px){.block-id{margin-top:50px;margin-left:auto}}.chroma{color:#f8f8f2;background-color:#272822}.chroma .k,.chroma .kc,.chroma .kd,.chroma .kt{color:#66d9ef}.chroma .nf,.chroma .nx{color:#a6e22e}.chroma .l,.chroma .mi{color:#ae81ff}.chroma .o{color:#f92672}.chroma .c1{color:#75715e}</style><link rel="shortcut icon" href="../../favicon/favicon.ico"><link rel="icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_32x32_resize_mitchellnetravali_3.png" sizes="32x32"><link rel="icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_57x57_resize_mitchellnetravali_3.png" sizes="57x57"><link rel="icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_76x76_resize_mitchellnetravali_3.png" sizes="76x76"><link rel="icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_96x96_resize_mitchellnetravali_3.png" sizes="96x96"><link rel="icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_128x128_resize_mitchellnetravali_3.png" sizes="128x128"><link rel="icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_192x192_resize_mitchellnetravali_3.png" sizes="192x192"><link rel="icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_228x228_resize_mitchellnetravali_3.png" sizes="228x228"><link rel="shortcut icon" href="../../img/favicon.png" sizes="196x196"><link rel="apple-touch-icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_120x120_resize_mitchellnetravali_3.png" sizes="120x120"><link rel="apple-touch-icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_152x152_resize_mitchellnetravali_3.png" sizes="152x152"><link rel="apple-touch-icon" href="https://berty.tech/img/favicon_hu8c11226219fbafadc0690fa2ac23a909_19505_180x180_resize_mitchellnetravali_3.png" sizes="180x180"><meta name="msapplication-TileColor" content="#3f49ea"><meta name="msapplication-TileImage" content="/img/faviconpng"><meta name="msapplication-config" content="/favicon/browserconfig.xml"><link rel="manifest" href="https://berty.tech/favicon/site.webmanifest"><link rel="mask-icon" href="https://berty.tech/favicon/safari-pinned-tab.svg" color="#5bbad5"><meta name="theme-color" content="#ffffff"><link rel="canonical" href="/docs/protocol/index.html"><link rel="alternate" hreflang="fr" href="https://berty.tech/fr/docs/protocol/"><link rel="alternate" hreflang="en" href="index.html"><meta name="description" content="The decentralized offline-first communication protocol"><meta property="og:locale:alternate" content="ar_SA"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:locale:alternate" content="eo"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="hi_IN"><meta property="og:locale:alternate" content="id_ID"><meta property="og:locale:alternate" content="ka_KA"><meta property="og:locale:alternate" content="pl_PL"><meta property="og:locale:alternate" content="pt_BR"><meta property="og:locale:alternate" content="pt_PT"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:locale:alternate" content="sl_SI"><meta property="og:locale:alternate" content="te_TE"><meta property="og:locale:alternate" content="uk_UA"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:description" content="The decentralized offline-first communication protocol"><meta property="og:url" content="https://berty.tech/docs/protocol"><meta property="og:site_name" content="Berty Technologies"><meta property="og:type" content="website"><meta property="og:image" content="https://berty.tech/img/berty_docs_hudb247d1eb4b41c55250430a9ab23ec60_292124_1024x512_fill_mitchellnetravali_center_3.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="512"><meta property="og:title" content="Wesh Protocol &#xB7; Berty Technologies"><meta property="og:locale" content="en-US"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:title" content="Wesh Protocol &#xB7; Berty Technologies"><meta property="twitter:description" content="The decentralized offline-first communication protocol"><meta property="twitter:image" content="https://berty.tech/img/berty_docs_hudb247d1eb4b41c55250430a9ab23ec60_292124_1024x512_fill_mitchellnetravali_center_3.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://berty.tech/","sameAs":["https://twitter.com/berty","https://github.com/berty","https://medium.com/berty-tech","https://www.linkedin.com/company/berty"],"@id":"https://berty.tech/#organization","name":"Berty Technologies","logo":{"@type":"ImageObject","@context":"http://schema.org","url":"https://berty.tech/img/berty_logo_square-1200x1200.png","width":"1200","height":"1200"},"address":{"@type":"PostalAddress","addresscountry":"France","addresslocality":"Paris","addressregion":"Île-de-France","postalcode":"75017","streetaddress":"96 Boulevard Bessières"},"contactPoint":{"@type":"ContactPoint","contactType":"Customer support","telephone":"&#43;33 805 08 20 00","email":"contact@berty.tech"}}</script><script type="application/ld+json">{"@type":"Website","@context":"http://schema.org","name":"Berty Technologies","description":"We build tools to enhance communication freedom","url":"https://berty.tech/","image":{"@type":"ImageObject","@context":"http://schema.org","url":"https://berty.tech/img/berty_logo_square-1200x1200.png","width":"1200","height":"1200"},"sameAs":["https://twitter.com/berty","https://github.com/berty","https://medium.com/berty-tech","https://www.linkedin.com/company/berty"],"copyrightHolder":{"@context":"https://schema.org","@type":"Organization","url":"https://berty.tech/","sameAs":["https://twitter.com/berty","https://github.com/berty","https://medium.com/berty-tech","https://www.linkedin.com/company/berty"],"name":"Berty Technologies","logo":{"@type":"ImageObject","@context":"http://schema.org","url":"https://berty.tech/img/berty_logo_square-1200x1200.png","width":"1200","height":"1200"},"address":{"@type":"PostalAddress","addresscountry":"France","addresslocality":"Paris","addressregion":"Île-de-France","postalcode":"75017","streetaddress":"96 Boulevard Bessières"},"contactPoint":{"@type":"ContactPoint","contactType":"Customer support","telephone":"&#43;33 805 08 20 00","email":"contact@berty.tech"}},"author":{"@context":"https://schema.org","@type":"Organization","url":"https://berty.tech/","sameAs":["https://twitter.com/berty","https://github.com/berty","https://medium.com/berty-tech","https://www.linkedin.com/company/berty"],"name":"Berty Technologies","logo":{"@type":"ImageObject","@context":"http://schema.org","url":"https://berty.tech/img/berty_logo_square-1200x1200.png","width":"1200","height":"1200"},"address":{"@type":"PostalAddress","addresscountry":"France","addresslocality":"Paris","addressregion":"Île-de-France","postalcode":"75017","streetaddress":"96 Boulevard Bessières"},"contactPoint":{"@type":"ContactPoint","contactType":"Customer support","telephone":"&#43;33 805 08 20 00","email":"contact@berty.tech"}}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Berty","operatingSystem":["Android","iOS","OSX","Windows"],"applicationCategory":"Messaging","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://berty.tech"},{"@type":"ListItem","position":2,"name":"Docs","item":"../index.html"},{"@type":"ListItem","position":3,"name":"Protocol","item":"https://berty.tech/docs/protocol"}]}</script><script type="application/ld+json">{"@type":"WebPage","@context":"http://schema.org","inLanguage":"en","copyrightYear":2024,"url":"https://berty.tech/docs/protocol/","author":{"@context":"https://schema.org","@type":"Organization","url":"https://berty.tech/","sameAs":["https://twitter.com/berty","https://github.com/berty","https://medium.com/berty-tech","https://www.linkedin.com/company/berty"],"name":"Berty Technologies","logo":{"@type":"ImageObject","@context":"http://schema.org","url":"https://berty.tech/img/berty_logo_square-1200x1200.png","width":"1200","height":"1200"},"address":{"@type":"PostalAddress","addresscountry":"France","addresslocality":"Paris","addressregion":"Île-de-France","postalcode":"75017","streetaddress":"96 Boulevard Bessières"},"contactPoint":{"@type":"ContactPoint","contactType":"Customer support","telephone":"&#43;33 805 08 20 00","email":"contact@berty.tech"}},"publisher":{"@context":"https://schema.org","@type":"Organization","url":"https://berty.tech/","sameAs":["https://twitter.com/berty","https://github.com/berty","https://medium.com/berty-tech","https://www.linkedin.com/company/berty"],"name":"Berty Technologies","logo":{"@type":"ImageObject","@context":"http://schema.org","url":"https://berty.tech/img/berty_logo_square-1200x1200.png","width":"1200","height":"1200"},"address":{"@type":"PostalAddress","addresscountry":"France","addresslocality":"Paris","addressregion":"Île-de-France","postalcode":"75017","streetaddress":"96 Boulevard Bessières"},"contactPoint":{"@type":"ContactPoint","contactType":"Customer support","telephone":"&#43;33 805 08 20 00","email":"contact@berty.tech"}}}</script><meta property="dateModified" content="2023-03-29T18:18:18+01:00"><meta property="keywords" content><meta property="wordCount" content="6580"><meta name="pinterest" content="nopin"></head><body class="page-doc wh" tabindex="-1" role="dialog"> <amp-sidebar id="sidebar" layout="nodisplay" side="left"> <a class="nav-brand" href="https://berty.tech/"> <amp-img class="_to-webp img-berty" alt="Berty Technologies" src="../../img/berty_logo.svg" width="150" height="45" layout="responsive"> <amp-img fallback alt="Berty Technologies" src="../../img/berty_logo.svg" width="150" height="45" layout="responsive"> </amp-img>
+</amp-img> </a> <ul class="nav flex-column"> <li class="nav-section">Our products</li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/wesh"> <img src="../../img/wesh.svg" alt="Wesh Network"> <span class="title">Wesh network</span> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/messenger"> <img src="../../img/berty-messenger.svg" alt="Berty Messenger"> <span class="title">Berty messenger</span> </a> </li> <li class="nav-section">Developers</li> <li class="nav-item"> <a class="nav-link" href="../index.html#projects"> <i class="far fa-cubes c-blue"></i> <span class="title">Our Projects</span> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/contribute"> <i class="fal fa-code-branch c-blue"></i> <span class="title">Contribute</span> </a> </li> <li class="nav-section">Resources</li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/contribute#projects-we-love"> <img src="../../img/icon-partners.svg" alt="Partners"> <span class="title">Partners</span> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/jobs"> <i class="fal fa-laptop-code c-blue"></i> <span class="title">Jobs</span> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/newsletter"> <i class="fal fa-envelope-open-text c-blue"></i> <span class="title">Newsletter</span> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/contact"> <i class="fal fa-paper-plane c-blue"></i> <span class="title">Contact</span> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/press"> <i class="fal fa-newspaper c-blue"></i> <span class="title">Press</span> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://berty-tech.myshopify.com/"> <i class="fal fa-store c-blue"></i> <span class="title">Boutique</span> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://assets.berty.tech/"> <i class="fal fa-photo-video c-blue"></i> <span class="title">Assets</span> </a> </li> </ul>
+</amp-sidebar> <nav class="navbar navbar-expand-md navbar-dark"> <div class="container"> <a class="navbar-brand" href="https://berty.tech/"> <amp-img class="_to-webp img-berty" alt="Berty Technologies" src="../../img/berty_mono.svg" width="150" height="45" layout="responsive"> <amp-img fallback alt="Berty Technologies" src="../../img/berty_mono.svg" width="150" height="45" layout="responsive"> </amp-img>
+</amp-img> </a> <button on="tap:sidebar.open" class="navbar-toggler" type="button" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation"> <i class="far fa-bars"></i> </button> <div class="collapse navbar-collapse justify-content-end" id="navbar-links"> <amp-script layout="container" src="../../js/amp-navbar.js" style="opacity:1"> <ul class="navbar-nav"> <li class="nav-item dropdown"> <a class="nav-link" href="#" id="d-difference" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Our products<i class="far fa-chevron-down"></i> </a> <div class="dropdown-menu" aria-labelledby="d-difference"> <a class="dropdown-item l" href="https://berty.tech/wesh"> <img src="../../img/wesh.svg" alt="Wesh Network"> <span class="title">Wesh Network</span> <span class="subtitle">Wesh Network is an open source, wild &amp; asynchronous mesh network protocol powered<br> by Berty Technologies&#x2019; non-profit organisation.</span> </a> <a class="dropdown-item l" href="https://berty.tech/messenger"> <img src="../../img/berty-messenger.svg" alt="Berty Messenger"> <span class="title">Berty messenger</span> <span class="subtitle">Built on the Wesh Network protocol, is a concrete demonstration of Berty Technologies&#x2019;<br> pledge to privacy in the realm of decentralization.</span> </a> </div> </li> <li class="nav-item dropdown"> <a class="nav-link" href="#" id="d-developers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Developers<i class="far fa-chevron-down"></i> </a> <div class="dropdown-menu" aria-labelledby="d-developers"> <a class="dropdown-item l" href="../index.html#projects"> <i class="far fa-cubes c-blue"></i> <span class="title">Our Projects</span> <span class="subtitle">Go-IPFS-Log, Go-Orbit-DB...</span> </a> <a class="dropdown-item l" href="https://berty.tech/contribute"> <i class="fal fa-code-branch c-blue"></i> <span class="title">Contribute</span> <span class="subtitle">Developer, crypto specialist, translator...</span> </a> <div class="dropdown-divider"></div> <a class="dropdown-item f" href="https://github.com/berty" target="_blank" rel="noopener"> <i class="fab fa-github c-fakeblack"></i> <span class="title">View source code on Github</span> </a> </div> </li> <li class="nav-item dropdown"> <a class="nav-link" href="#" id="d-resources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Resources<i class="far fa-chevron-down"></i> </a> <div class="dropdown-menu" aria-labelledby="d-resources"> <a class="dropdown-item l" href="https://berty.tech/contribute#projects-we-love"> <img src="../../img/icon-partners.svg" alt="Partners"> <span class="title">Partners</span> <span class="subtitle">They trusted us</span> </a> <div class="d-flex nav-block-partners"> <a href="https://ipfs.tech/" target="_blank" rel="noopener noreferrer"> <img src="../../img/img-ipfs.png" alt="IPFS"> <p>IPFS</p> </a> <a href="https://42.fr/" target="_blank" rel="noopener noreferrer"> <img src="../../img/img-42.png" alt="42"> <p>42</p> </a> <a href="https://p2p.paris/en/" target="_blank" rel="noopener noreferrer"> <img src="../../img/img-paris-p2p.png" alt="ParisP2P"> <p>ParisP2P</p> </a> <a href="https://protocol.ai/" target="_blank" rel="noopener noreferrer"> <img src="../../img/img-protocol-labs.png" alt="Protocol Labs"> <p>Protocol Labs</p> </a> </div> <a class="dropdown-item l" href="https://berty.crew.work/jobs" target="_blabk"> <i class="fal fa-laptop-code c-blue"></i> <span class="title">Jobs</span> <span class="subtitle">Our open positions</span> </a> <a class="dropdown-item l" href="https://berty.tech/newsletter"> <i class="fal fa-envelope-open-text c-blue"></i> <span class="title">Newsletter</span> <span class="subtitle">Subscribe and read previous issues</span> </a> <a class="dropdown-item l" href="https://berty.tech/contact"> <i class="fal fa-paper-plane c-blue"></i> <span class="title">Contact</span> <span class="subtitle">Get in touch with us</span> </a> <a class="dropdown-item l" href="https://berty.tech/press"> <i class="fal fa-newspaper c-blue"></i> <span class="title">Press</span> <span class="subtitle">Press documents and medias</span> </a> <a class="dropdown-item l" href="https://berty-tech.myshopify.com/"> <i class="fal fa-store c-blue"></i> <span class="title">Boutique</span> <span class="subtitle">Buy t-shirts and goodies</span> </a> <a class="dropdown-item l" href="https://assets.berty.tech/"> <i class="fal fa-photo-video c-blue"></i> <span class="title">Assets</span> <span class="subtitle">Logos, icons, pictures...</span> </a> </div> </li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/community">Community</a> </li> <li class="nav-item"> <a class="nav-link" href="https://berty.tech/blog">Blog</a> </li> </ul> </amp-script> </div> </div>
+</nav> <amp-analytics> <script type="application/json">{"triggers":{"trackPageview":{"on":"visible","request":"pageview"}},"requests":{"base":"https://bertytech.matomo.cloud/matomo.php?idsite=1&rec=1&action_name=${title}&url=${sourceUrl}&rand=${random}&apiv=1&urlref=${documentReferrer}&res=${screenWidth}x${screenHeight}&lang=${browserLanguage}&gt_ms=${serverResponseTime}&cs=${documentCharset}&_cvar={\"1\":[\"errorName\",\"${errorName}\"],\"2\":[\"errorMessage\",\"${errorMessage}\"]}","pageview":"${base}"}}</script> </amp-analytics> <header class="header-rounded small bg-blue gradient bg-docs"> <div class="container"> <div class="subnav col-md-10 px-3 px-md-0 d-flex justify-content-between align-items-center"> <a class="btn btn-bty btn-transparent" href="../index.html"><i class="far fa-arrow-left"></i>Back to docs</a> <div class="d-flex"> <div class="mr-2"> <a class="btn btn-bty btn-blue" href="https://github.com/sponsors/berty" target="_blank"> <i class="hover-hide far fa-heart"></i><i class="hover-show fas fa-heart"></i>Support our work
+</a> </div> <a class="btn btn-bty btn-grack ml-2" href="https://github.com/berty/www.berty.tech/edit/master/bertytech/content/docs/protocol/index.md" target="_blank" rel="noopener"> <i class="fab fa-github"></i>Edit on github </a> </div> </div> </div>
+</header> <div class="content"> <div class="container"> <div class="row"> <div class="col-md-10"> <div class="block block-doc-content bg-white js-toc-content"> <span class="text-secondary">Last modified on <strong>29 Mar 2023</strong></span> <h1 id="wesh-protocol">Wesh protocol</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This document provides a technical description of the Wesh protocol.
+The Wesh protocol provides secure communication between devices owned by the
+same account, communication between contacts in one-to-one conversations,
+as well as communication between several users in multi-member groups. This
+paper will explain how those points are implemented in a distributed and
+asynchronous way, both with or without internet access using IPFS and direct
+transports such as BLE. It will also describe how the Wesh protocol provides
+end-to-end encryption and perfect forward secrecy for all the exchanged messages.</p>
+<blockquote>
+<p>&#x26A0;&#xFE0F; Warning</p>
+<p>The implementation of the protocol is still in progress. Some features described
+in this document are not implemented yet.</p>
+<p>This protocol has still not been thoroughly audited and some points are bound to
+evolve with time and feedback.</p>
+<p>Nevertheless, we are confident enough about the progression of the protocol
+design to say that the majority of these specifications should remain the same.</p>
+<p>If a security expert reads this document and wishes to provide us with some
+feedback, we look forward to reading it. Please contact us using one of the
+means listed on this page: <a href="https://berty.tech/community#-how-to-contact-us" target="_blank" rel="noopener"> berty.tech/community#-how-to-contact-us
+</a></p>
+</blockquote>
+<p>The Wesh protocol is part of the Wesh Network product and was previously named Berty Protocol.</p>
+<h2 id="protocol-stack">Protocol Stack</h2>
+<h3 id="ipfs">IPFS</h3>
+<h4 id="properties">Properties</h4>
+<p> <a href="https://ipfs.io/" target="_blank" rel="noopener"> IPFS
+</a> is a peer-to-peer network for storing and sharing data
+in a <a href="https://berty.tech/blog/decentralized-distributed-centralized/" target="_blank" rel="noopener"> distributed
+</a>
+file system. Here is a very succinct description of how IPFS works:</p>
+<ul>
+<li>Each peer has an identity key pair</li>
+<li>Each peer identifies itself using a peerID (basically, a hash of its identity
+public key).</li>
+<li>Each content is identified using a contentID (basically, a hash of the content).</li>
+<li>A peer can make a locally stored content available on the network, announcing
+that a given contentID is provided by its peerID, so other peers can connect to
+it and fetch the content.</li>
+<li>Once a peer has fetched the content over IPFS, it can also become a provider
+for this content, thus increasing its availability.</li>
+<li>To make it all work, IPFS uses the <a href="https://libp2p.io/" target="_blank" rel="noopener"> libp2p network stack
+</a>
+which provides everything that is needed to create a p2p application: DHT,
+PubSub, Nat Traversal, a collection of transports, etc&#x2026;</li>
+</ul>
+<h4 id="implications">Implications</h4>
+<p>The Wesh protocol uses IPFS for the specific purpose of instant messaging. The utilization
+of a peer-to-peer network for instant messages provides two main advantages:</p>
+<ul>
+<li><strong>It is virtually impossible to block it or take it down</strong>: anyone can launch a
+node in a few seconds on their computer and two nodes within the same LAN are
+still able to communicate and operate without internet access, whereas in a
+centralized model, it is easier to block access to the servers of the company
+concerned, or even to force it to shut down its servers and stop its activity.</li>
+<li><strong>It is difficult to monitor</strong>: there is no central server to spy on nor central
+directory to compromise, thus metadata collection is greatly minimized. Instead
+of a directory linking public keys to personal data such as telephone numbers,
+the Wesh protocol uses a combination of TOTP and a public key to generate
+rendezvous point addresses and register its users on IPFS, who can later be
+contacted by peers wishing to communicate.</li>
+</ul>
+<p>However it also brings several technical constraints:</p>
+<ul>
+<li><strong>Content availability</strong>: since there is no central storage, all the messages
+are stored on the users devices and it is impossible to access content stored
+on a device that is offline or unreachable from a given network.</li>
+<li><strong>Asynchrony</strong>: there is no central server to rule over the timeline, and
+therefore timestamps cannot be used for any purpose other than non-critical
+tasks like displaying messages in a certain order. For example: expiration time
+cannot be used to revoke access to a resource, it is impossible to determine
+with certainty the order in which operations occurred within a group of peers, etc&#x2026;</li>
+<li><strong>Authority</strong>: there is no central authority to arbitrate operations and any
+resulting conflicts or to manage user identity and permissions.</li>
+</ul>
+<blockquote>
+<p>&#x26A0;&#xFE0F; Warning</p>
+<p>For the moment, IPFS is not privacy-focused and since it is a peer-to-peer
+network, any peer can for instance resolve a peerID to its associated public IP
+address. On the protocol layer, we can only mitigate this problem by rotating
+the peerID of the user regularly, rotating rendezvous points that peers use to
+meet and synchronize with each other and by making it difficult to establish a
+relationship between the data shared by users.</p>
+<p>In the near future, we plan to invest some time to see to what extent, and with
+what constraints and implications, it would be possible to add an optional mode
+to the protocol in which connections are anonymized through networks like I2P,
+Tor or equivalent.</p>
+</blockquote>
+<h3 id="rendezvous-point">Rendezvous Point</h3>
+<p>A rendezvous point is a volatile address on a peer-to-peer network where two
+devices can meet. Peers can register their peerIDs on a given rendezvous point
+and/or get the list of already registered peers. In this way peers who, for
+example, need to connect together to exchange messages within a conversation,
+could find each other.</p>
+<p>Peers need to be able to generate on their own, the same address for a given
+rendezvous using previously shared secrets.</p>
+<p>In the Wesh protocol, the address of a rendezvous point is generated from two
+values:</p>
+<ul>
+<li>A resource ID</li>
+<li>A time-based token generated from a 32-byte seed</li>
+</ul>
+<p>The generation of the time-based token follows the core principles of the <a href="https://tools.ietf.org/html/rfc6238" target="_blank" rel="noopener"> RFC 6238
+</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// golang
+</span><span class="c1"></span><span class="kd">func</span> <span class="nf">rendezvousPoint</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">seed</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">,</span> <span class="nx">date</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Time</span><span class="p">)</span> <span class="p">[]</span><span class="kt">byte</span> <span class="p">{</span>
+    <span class="nx">buf</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">byte</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+    <span class="nx">mac</span> <span class="o">:=</span> <span class="nx">hmac</span><span class="p">.</span><span class="nf">New</span><span class="p">(</span><span class="nx">sha256</span><span class="p">.</span><span class="nx">New</span><span class="p">,</span> <span class="nx">seed</span><span class="p">)</span>
+    <span class="nx">binary</span><span class="p">.</span><span class="nx">BigEndian</span><span class="p">.</span><span class="nf">PutUint64</span><span class="p">(</span><span class="nx">buf</span><span class="p">,</span> <span class="nb">uint64</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nf">Unix</span><span class="p">()))</span>
+
+    <span class="nx">mac</span><span class="p">.</span><span class="nf">Write</span><span class="p">(</span><span class="nx">buf</span><span class="p">)</span>
+    <span class="nx">sum</span> <span class="o">:=</span> <span class="nx">mac</span><span class="p">.</span><span class="nf">Sum</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
+
+    <span class="nx">rendezvousPoint</span> <span class="o">:=</span> <span class="nx">sha256</span><span class="p">.</span><span class="nf">Sum256</span><span class="p">(</span><span class="nb">append</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">sum</span><span class="o">...</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="nx">rendezvousPoint</span><span class="p">[:]</span>
+<span class="p">}</span>
+</code></pre></div><p>There are two types of rendezvous points in the Wesh protocol:</p>
+<ul>
+<li> <a href="index.html#contact-request"> <strong>Public rendezvous point:</strong>
+</a> This rendezvous point is
+used by an account to receive contact requests. The resource ID used here is
+the Account ID and the seed can be renewed at will by the user, so it is
+possible to revoke the ability to send contact requests to users having only
+the previous seed.</li>
+<li> <a href="index.html#invitation"> <strong>Group rendezvous point:</strong>
+</a> This rendezvous point is used to
+exchange messages within a group. The resource ID used here is the Group ID,
+and the seed cannot be changed.</li>
+</ul>
+<p>The protocol relies on three different rendezvous point systems:</p>
+<ul>
+<li><strong>DHT-based</strong>: fully distributed, virtually impossible to shutdown, can
+operate without internet access but can be slow, especially for mobile usage.</li>
+<li><strong>Decentralized servers</strong>: not p2p / distributed, can be shut down easier
+than a DHT, can&#x2019;t be reached offline but is a lot faster.</li>
+<li><strong>Local record</strong>: used in combination with direct transports such as
+Bluetooth Low Energy. To make it simple, it consists of a process where a peer
+is sending its rendezvous point list to the peers it connects to via a direct
+transport. The advantage is that it works in this particular case with almost
+instantaneous results, but the disadvantage is that it raises privacy
+concerns. We are still working on this process to improve this point.
+More info in <a href="index.html#specificities-of-direct-transport"> Specificities of direct transport
+</a>
+section.</li>
+</ul>
+<h3 id="direct-transport">Direct Transport</h3>
+<p>When there is no internet access it is still possible to communicate using
+direct transports, given some physical constraints of distance. These
+transports integrate directly with IPFS and more precisely with its network
+layer: libp2p.</p>
+<p>Those direct transports are built on top of Android Nearby for Android
+devices, Multipeer Connectivity for iOS devices and <a href="https://berty.tech/blog/bluetooth-low-energy/" target="_blank" rel="noopener"> Bluetooth Low Energy (BLE)
+</a>
+for inter-OS communications. With Android Nearby and Multipeer Connectivity,
+messages can be exchanged over a Wi-Fi direct connection instead of BLE which
+is much faster and reliable.</p>
+<p>It is possible to fully use the Wesh protocol without ever accessing the
+Internet: create an account, add contacts to it, join conversations and send
+messages as long as there are Wesh users within Bluetooth range.</p>
+<h3 id="conflict-free-replicated-data-type">Conflict-free Replicated Data Type</h3>
+<p>Since it is possible to communicate both online and offline using direct
+transport, it is necessary to have a way to keep coherence and order between
+all the messages, especially in a conversation with several participants. For
+example, if Alice and Bob are in a chat group with several other persons and
+they both lose internet connection by taking the subway, they can still
+communicate with each other in this same conversation using BLE, creating a
+parallel version of this conversation. When they go back online, the BLE
+version and the Internet version will have to merge.
+It is therefore necessary to use an algorithm that ensures that all peers,
+once synchronized, have exactly the same sorted list of messages.</p>
+<p>The solution to this problem is <a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type" target="_blank" rel="noopener"> Conflict-free Replicated Data Type
+</a>
+(CRDT), which is a data structure allowing a consistent ordering of the
+messages on a distributed system. Wesh relies on <a href="https://github.com/berty/go-orbit-db" target="_blank" rel="noopener"> OrbitDB
+</a>
+which implements CRDT. The CRDT provides optimistic replication and strong
+eventual consistency, which assures that once synchronized, every peer will
+have the same version of the message list.</p>
+<p>Every message is linked to its parent, which is the last message sent in a
+conversation by one of the peers connected together at this moment. Problems
+appear when an online and an offline version of a conversation are
+synchronized: some messages are linked to the same parent and the linked list
+becomes a <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" target="_blank" rel="noopener"> Directed Acyclic Graphs
+</a>.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="DAG-offgrid" src="../../docs/protocol/BkFkKBDOU_hub6782b1aaace488361b88eb59d953e58_133009_970x0_resize_q100_lanczos_3.webp" width="970" height="397" layout="intrinsic"> <amp-img fallback alt="DAG-offgrid" src="../../docs/protocol/BkFkKBDOU_hub6782b1aaace488361b88eb59d953e58_133009_970x0_resize_q100_lanczos_3.png" width="970" height="397" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>This causes the creation of several parallel branches that will need to be
+eventually merged. OrbitDB achieves this by using a <a href="https://en.wikipedia.org/wiki/Lamport_timestamp" target="_blank" rel="noopener"> Lamport Clock
+</a>:
+each message will include one, and the merged list will be sorted according to
+its value.</p>
+<p>A Lamport Clock is a struct that consists of two fields: an identity public
+key and a counter that is incremented for each message posted by the
+associated user/identity.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// golang
+</span><span class="c1"></span><span class="kd">type</span> <span class="nx">lamportClock</span> <span class="kd">struct</span> <span class="p">{</span>
+    <span class="nx">time</span> <span class="kt">int</span>
+    <span class="nx">id</span>   <span class="nx">crypto</span><span class="p">.</span><span class="nx">PublicKey</span>
+<span class="p">}</span>
+</code></pre></div><p>The comparison function is very simple, it will first check the distance
+between the counter values and if there is none, it will check the
+lexicographic distance between the identity public keys, knowing that a given
+identity can&#x2019;t post two messages with the same counter value.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// golang
+</span><span class="c1"></span><span class="kd">func</span> <span class="nf">compareClock</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="nx">lamportClock</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+    <span class="nx">dist</span> <span class="o">:=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">time</span> <span class="o">-</span> <span class="nx">b</span><span class="p">.</span><span class="nx">time</span>
+
+    <span class="k">if</span> <span class="nx">dist</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="nx">dist</span> <span class="p">=</span> <span class="nf">comparePubKey</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span> <span class="nx">b</span><span class="p">.</span><span class="nx">id</span><span class="p">)</span> <span class="c1">// Returns lexicographic distance
+</span><span class="c1"></span>    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">dist</span>
+<span class="p">}</span>
+</code></pre></div><h2 id="account">Account</h2>
+<h3 id="account-creation">Account Creation</h3>
+<p>In order to use the Wesh protocol, a user will have to create an account. No
+personal data is required for the Account Creation. Please note that in the
+whole Wesh protocol, all key pairs will be X25519 for encryption and Ed25519
+for signature. See the <a href="index.html#cryptography"> Cryptography
+</a> section for more details
+about this choice.</p>
+<p><strong>Account creation steps:</strong></p>
+<ol>
+<li>Generate Account ID Key Pair. This operation will not be repeated. This key
+pair is the identity of the account, hence it is not possible to change it.</li>
+<li>Generate Alias Key Pair. Operation will not be repeated. More details on
+Alias Key Pair in <a href="index.html#alias-identity"> <em>Alias Identity</em>
+</a>.</li>
+<li>Generate Device ID Key Pair on device used for account creation. This
+operation will be repeated on every new device.
+See <a href="index.html#linking-devices"> <em>Linking Devices</em>
+</a> for more information. This key pair
+is the identity of the device.</li>
+<li>Generate Public RDV Seed. The RDV Seed is used to generate an RDV Point to
+receive a Contact Request. See <a href="index.html#adding-contacts"> <em>Adding Contacts</em>
+</a> for more
+information. This operation can be repeated anytime.</li>
+</ol>
+<p>Since there is no central directory, it is not required to have access to the
+Internet in order to create an Account and send/receive a contact request. If
+two users create their Account offline and then connect via direct transport,
+they will exchange their public rendezvous points (used for contact requests)
+and will therefore be able to add each other as a contact.</p>
+<p><strong>Note</strong>: In this paper, an &#x201C;ID&#x201D; will always denote the public key of a key pair.</p>
+<h3 id="linking-devices">Linking Devices</h3>
+<p>In the Wesh protocol, a user can use multiple devices within the same
+account, which means that those devices need to be linked with each other in
+order to synchronize the Account&#x2019;s contact list, group list, settings, etc&#x2026;
+To add a device B, to an existing Account on a device A, the linking steps
+below will be followed.</p>
+<p><strong>Linking steps:</strong></p>
+<ol>
+<li>First step is to generate a Device ID key pair on the new device B.</li>
+<li>Then device A has to generate an invitation containing A&#x2019;s peerID, for
+example, in the form of an URL or a QRCode.</li>
+<li>Device B must scan the QRCode or follow the URL provided by A to retrieve
+A&#x2019;s peerID, establish a connection with A and then send to A a linking request
+containing B&#x2019;s Device ID, initiating the following handshake:</li>
+</ol>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="handshake-sequence" src="../../docs/protocol/SkWZnyPOU_hu5264d17e56a21475f0f815598ac55625_98752_970x0_resize_q100_lanczos_3.webp" width="970" height="637" layout="intrinsic"> <amp-img fallback alt="handshake-sequence" src="../../docs/protocol/SkWZnyPOU_hu5264d17e56a21475f0f815598ac55625_98752_970x0_resize_q100_lanczos_3.png" width="970" height="637" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<h4 id="challenges">Challenges</h4>
+<p>There are three different types of challenges that A can send to B:</p>
+<ol>
+<li><strong>QRCode:</strong> B must display a QRCode containing the fingerprint of its
+Device ID and the user must scan this QRCode with device A. If the QRCode
+matches the ID that A previously received, then the linking is successful. If
+device A possesses a functioning camera, this challenge shall be preferred
+because it is both more secure and convenient for the user (there is no error
+possible while checking the ID and it requires minimal effort from the user).</li>
+<li><strong>PIN:</strong> A must display a PIN that the user has to enter on device B. Then
+B sends to A the signature of the PIN using its Device ID. Finally, A verifies
+the signature of the PIN using B&#x2019;s Device ID then the linking is successful.
+This challenge is secure but less convenient for the user (an active
+confirmation is required).</li>
+<li><strong>Fingerprint:</strong> B and A must display a fingerprint of B&#x2019;s ID then the user
+will have to verify manually that the two fingerprints are the same and
+confirm it using a checkbox. This challenge is less secure because the user
+can confirm the equality without carefully reading the fingerprints, so it
+shall not be proposed to the user, unless they want to automate this process,
+for example, in the context of linking a range of servers to an Account with a
+script that could automatically check that the fingerprints match.</li>
+</ol>
+<p>We recommend to developers implementing an application using the Wesh
+protocol to follow this state diagram to choose a challenge on Device A:</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="challenge-choice" src="../../docs/protocol/SJ6dgzaiU_hue06bc0fb337915ab6747f2b6af4fc24a_288732_970x0_resize_q100_lanczos_3.webp" width="970" height="894" layout="intrinsic"> <amp-img fallback alt="challenge-choice" src="../../docs/protocol/SJ6dgzaiU_hue06bc0fb337915ab6747f2b6af4fc24a_288732_970x0_resize_q100_lanczos_3.png" width="970" height="894" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<h4 id="limitations">Limitations</h4>
+<ul>
+<li><strong>Device revocation:</strong> Please note that it is impossible to revoke a device.
+Once a device has been linked, it is in possession of the same information and
+secrets as every other device. Hence it has the same capabilities as every
+other device, for example the capability to link other devices, send messages,
+join groups or add contacts. There is no hierarchy between devices linked to
+an account.</li>
+<li><strong>Device synchronization:</strong> Since Wesh is an asynchronous protocol, two
+devices need to be online at the same time to be synchronized. However, it is
+possible to palliate this problem using replication devices, whose sole
+purpose is to provide high availability for content. Those devices are not
+able to decrypt messages and all they can do is verify their authenticity
+(see <a href="index.html#high-availability"> <em>High Availability</em>
+</a> for more information).</li>
+</ul>
+<h3 id="adding-contacts">Adding Contacts</h3>
+<p>If an Account A wants to start a one-to-one conversation with an Account B, it
+will have to add B as a contact first.
+A will have to send a contact request to B that B will have to accept before
+the conversation can begin</p>
+<h4 id="contact-request">Contact Request</h4>
+<p>When an Account A (the Requester) wants to add an Account B (the Responder) to
+its contacts, it needs to know the Responder&#x2019;s Public rendezvous point. This <a href="index.html#rendezvous-points"> rendezvous point
+</a> is derived from the RDV Seed and the
+Account ID. Thus the Responder first needs to share his RDV Seed and his
+Account ID with the Requester, so that the latter can compute the RDV Point.
+This information can be sent by different means: an URL sent by message, a
+QRCode displayed on the Responder&#x2019;s device and scanned by the Requester&#x2019;s
+smartphone, etc&#x2026;</p>
+<p>The Responder can renew their RDV Seed at any time. If it does so, the
+Requester will not be able to send a contact request anymore unless the
+Responder shares its new RDV Seed. The Responder can also completely disable
+incoming contact requests by unregistering its devices from its public
+rendezvous point.</p>
+<p>Once the Requester has computed the Responder&#x2019;s RDV Point, it will be able to
+initiate the following Contact Request handshake.</p>
+<h4 id="handshake">Handshake</h4>
+<p>Here is the handshake which occurs when the Requester sends a Contact Request
+to the Responder:</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="handshake-sequence" src="../../docs/protocol/Hy-d6h6wL_huc217626ea3421b145d2241c529b73954_115816_970x0_resize_q100_lanczos_3.webp" width="970" height="679" layout="intrinsic"> <amp-img fallback alt="handshake-sequence" src="../../docs/protocol/Hy-d6h6wL_huc217626ea3421b145d2241c529b73954_115816_970x0_resize_q100_lanczos_3.png" width="970" height="679" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>This handshake is widely inspired by <a href="https://scuttlebot.io/more/protocols/shs.pdf" target="_blank" rel="noopener"> Scuttlebutt&#x2019;s Capability-based Handshake
+</a>.</p>
+<h5 id="starting-keys">Starting keys</h5>
+<p>Here is the list of the keys known by each participant at the beginning of the
+handshake:</p>
+<ul>
+<li>Requester knows:
+<ul>
+<li><amp-mathml layout="container" data-formula="`A_s`" inline="true">
+</amp-mathml> and <amp-mathml layout="container" data-formula="`A_p`" inline="true">
+</amp-mathml>: Requester&#x2019;s ID key pair.</li>
+<li><amp-mathml layout="container" data-formula="`a_s`" inline="true">
+</amp-mathml> and <amp-mathml layout="container" data-formula="`a_p`" inline="true">
+</amp-mathml>: Requester&#x2019;s ephemeral key pair.</li>
+<li><amp-mathml layout="container" data-formula="`B_p`" inline="true">
+</amp-mathml> Responder&#x2019;s ID public key.</li>
+</ul>
+</li>
+<li>Responder knows:
+<ul>
+<li><amp-mathml layout="container" data-formula="`B_s`" inline="true">
+</amp-mathml> and <amp-mathml layout="container" data-formula="`B_p`" inline="true">
+</amp-mathml>: Responder&#x2019;s ID key pair.</li>
+<li><amp-mathml layout="container" data-formula="`b_s`" inline="true">
+</amp-mathml> and <amp-mathml layout="container" data-formula="`b_p`" inline="true">
+</amp-mathml>: Responder&#x2019;s ephemeral key pair.</li>
+</ul>
+</li>
+</ul>
+<h5 id="1-requester-hello">1. Requester Hello</h5>
+<p>The Requester sends its ephemeral public key <amp-mathml layout="container" data-formula="`a_p`" inline="true">
+</amp-mathml> to the Responder. Ephemeral
+keys are only used for one handshake and then discarded. They guarantee the
+freshness of the messages to avoid replay attacks.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="requester-hello" src="../../docs/protocol/HkAFBapv8_hu5ae0799ce5a74a8bc28c12ddc96fa91b_27502_970x0_resize_q100_lanczos_3.webp" width="970" height="92" layout="intrinsic"> <amp-img fallback alt="requester-hello" src="../../docs/protocol/HkAFBapv8_hu5ae0799ce5a74a8bc28c12ddc96fa91b_27502_970x0_resize_q100_lanczos_3.png" width="970" height="92" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<h5 id="2-responder-hello">2. Responder Hello</h5>
+<p>The Responder sends its ephemeral public key <amp-mathml layout="container" data-formula="`b_p`" inline="true">
+</amp-mathml> to the Requester.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="responder-hello-1" src="../../docs/protocol/rkYDSaaDI_hu3f016d030202f7595dae1c5a8a6afee5_29235_970x0_resize_q100_lanczos_3.webp" width="970" height="135" layout="intrinsic"> <amp-img fallback alt="responder-hello-1" src="../../docs/protocol/rkYDSaaDI_hu3f016d030202f7595dae1c5a8a6afee5_29235_970x0_resize_q100_lanczos_3.png" width="970" height="135" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>Now both the Requester and the Responder are able to compute two shared
+secrets denoted <amp-mathml layout="container" data-formula="`a.b`" inline="true">
+</amp-mathml> and <amp-mathml layout="container" data-formula="`a.B`" inline="true">
+</amp-mathml>:</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="responder-hello-2" src="../../docs/protocol/ryrmDTpw8_hu28c730a9e365e08461ddc4a33f3d760f_118126_970x0_resize_q100_lanczos_3.webp" width="970" height="521" layout="intrinsic"> <amp-img fallback alt="responder-hello-2" src="../../docs/protocol/ryrmDTpw8_hu28c730a9e365e08461ddc4a33f3d760f_118126_970x0_resize_q100_lanczos_3.png" width="970" height="521" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>Secrets are derived using the X25519 protocol. Since a man-in-the-middle could
+have intercepted the ephemeral keys and replaced them, we need cannot only
+rely on <amp-mathml layout="container" data-formula="`a.b`" inline="true">
+</amp-mathml> and we also need to use <amp-mathml layout="container" data-formula="`a.B`" inline="true">
+</amp-mathml> in our following exchanges.</p>
+<h5 id="3-requester-authenticate">3. Requester Authenticate</h5>
+<p>The Requester sends a secret box containing the signature of <amp-mathml layout="container" data-formula="`a.b`" inline="true">
+</amp-mathml> along with
+their ID public key to authenticate themselves. The secret box is sealed with
+<amp-mathml layout="container" data-formula="`a.b`" inline="true">
+</amp-mathml> and <amp-mathml layout="container" data-formula="`a.B`" inline="true">
+</amp-mathml>, thus in this step the Requester also proves that they know
+the Responder&#x2019;s ID.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="requester-auth-1" src="../../docs/protocol/BymgCaaDI_hu4bad439f87a5d20e9709025d5bc31a22_101855_970x0_resize_q100_lanczos_3.webp" width="970" height="313" layout="intrinsic"> <amp-img fallback alt="requester-auth-1" src="../../docs/protocol/BymgCaaDI_hu4bad439f87a5d20e9709025d5bc31a22_101855_970x0_resize_q100_lanczos_3.png" width="970" height="313" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>From this step, a man-in-the-middle is no longer able to intercept the
+exchanges because they are not able to compute <amp-mathml layout="container" data-formula="`a.B`" inline="true">
+</amp-mathml>, regardless of what they
+have done in the previous steps.</p>
+<p>Now both the Requester and the Responder are able to compute another shared
+secret denoted <amp-mathml layout="container" data-formula="`A.B`" inline="true">
+</amp-mathml>:</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="requester-auth-2" src="../../docs/protocol/BJWLZR6vU_hu8e9198c8f2c6bd040ab6204e6b35ab0f_61589_970x0_resize_q100_lanczos_3.webp" width="970" height="310" layout="intrinsic"> <amp-img fallback alt="requester-auth-2" src="../../docs/protocol/BJWLZR6vU_hu8e9198c8f2c6bd040ab6204e6b35ab0f_61589_970x0_resize_q100_lanczos_3.png" width="970" height="310" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<h5 id="4-responder-accept">4. Responder Accept</h5>
+<p>The Responder sends a secret box containing the signature of <amp-mathml layout="container" data-formula="`a.b`" inline="true">
+</amp-mathml>. The secret
+box is sealed with <amp-mathml layout="container" data-formula="`a.b`" inline="true">
+</amp-mathml> and the new secret <amp-mathml layout="container" data-formula="`A.B`" inline="true">
+</amp-mathml>, which proves that the
+Responder has effectively received and decrypted the previous message.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="responder-accept" src="../../docs/protocol/ry6qXApPU_hu660ad4c0c4d4b9d6dc5e9ddf637f9350_77140_970x0_resize_q100_lanczos_3.webp" width="970" height="264" layout="intrinsic"> <amp-img fallback alt="responder-accept" src="../../docs/protocol/ry6qXApPU_hu660ad4c0c4d4b9d6dc5e9ddf637f9350_77140_970x0_resize_q100_lanczos_3.png" width="970" height="264" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<h5 id="5-requester-acknowledge">5. Requester Acknowledge</h5>
+<p>To inform the Responder that the Requester has not encountered any errors
+while verifying the contents of the <code>Responder Accept</code>, the Requester sends an
+acknowledgement. After this step, the handshake is considered valid by both
+parties.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="requester-ack" src="../../docs/protocol/Hks1bEvu8_huc637054fc25404772d058ff57d4a9a34_28139_970x0_resize_q100_lanczos_3.webp" width="970" height="107" layout="intrinsic"> <amp-img fallback alt="requester-ack" src="../../docs/protocol/Hks1bEvu8_huc637054fc25404772d058ff57d4a9a34_28139_970x0_resize_q100_lanczos_3.png" width="970" height="107" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<h5 id="security">Security</h5>
+<ul>
+<li><strong>Man-in-the-Middle:</strong> The handshake is not vulnerable to Man-in-the-Middle
+Attack. Indeed, the Requester already knows the Responder&#x2019;s identity because
+they got it in a trusted way (for example by scanning a QRCode directly from
+the Responder&#x2019;s device). To verify each other&#x2019;s identities, the Requester and
+the Responder may meet later and check the fingerprint of their shared secret.</li>
+<li><strong>DDoS Attack:</strong> If the Responder refuses the Contact Request, they can
+block the Requester&#x2019;s ID so they cannot initiate handshakes with them anymore.
+If the Responder is receiving too many contact requests, they can also change
+their RDV Seed and become unreachable using a former RDV Point.</li>
+<li><strong>Replay Attack:</strong> The use of ephemeral key pairs guarantees that an
+attacker cannot reuse a previously stolen message in order to dupe the
+Requester or the Responder.</li>
+</ul>
+<h5 id="limitations-1">Limitations</h5>
+<ul>
+<li><strong>Device availability:</strong> Please note that the Handshake is the only
+synchronous operation of the Wesh protocol: in order to succeed, both devices
+need to be online at the same time, which is usually the case if the Requester
+has scanned a QRCode on the Responder&#x2019;s Device, but which may also not be the
+case if the Requester has clicked on a URL received by message. In the case
+none of the Responder&#x2019;s devices are available, the Requester must wait and
+initiate a handshake later.</li>
+</ul>
+<h2 id="groups">Groups</h2>
+<h3 id="concept">Concept</h3>
+<p>The protocol is strongly based on the concept of group. A group is a logical
+structure in which Members and their Devices connect to exchange messages and
+metadata.
+The metadata are various, some of them inform the group that a new Member or a
+new Member&#x2019;s Device has joined the group, others are used to exchange
+encryption keys between Members and so on.
+Messages and Metadata are exchanged through two immutable logs provided by
+OrbitDB.</p>
+<h3 id="group-structure">Group Structure</h3>
+<p>A Group is divided into two logs: a message log and a metadata log.</p>
+<ul>
+<li><strong>Message log:</strong> Contains all the messages exchanged within a Group. Members
+of the group can download only a part of the message log if they want to (for
+example only the 1000 last messages). Besides, members cannot decrypt messages
+sent before their arrival due to the Symmetric Ratchet Protocol
+(see <a href="index.html#encryption"> <em>Encryption</em>
+</a> for more information).</li>
+<li><strong>Metadata log:</strong> Contains all the metadata of the Group. Since it contains
+essential information, members of the group shall download the whole metadata
+log. Secrets are exchanged on this log. <a href="index.html#joining-a-group"> Arrivals of new members
+</a> are also announced on this log, so
+if a new member does not download the whole metadata log they will not know
+the full list of members, thus they will not be able to exchange secrets with
+them and therefore, they will not be able to decrypt their messages.</li>
+</ul>
+<h3 id="types-of-groups">Types of Groups</h3>
+<p>In the Wesh protocol, there are three different types of Groups: Account
+Group, Contact Group, and Multi-Member Group. A Group Member is a Wesh user
+(an account) in a Group. Groups are essential for communication in the Wesh protocol, and
+they have their own keys and secrets shared between all the Group Members:</p>
+<ul>
+<li><strong>Group Secret:</strong> The Group Secret is a symmetric key used to
+encrypt/decrypt group payloads.</li>
+<li><strong>Group ID Key Pair:</strong> The Group ID is used to derive the Group RDV Point.
+The private key is only used to generate the Group Secret Sig and to sign the
+creator Member ID, and then it is discarded (Multi-Member Groups only)</li>
+<li><strong>Attachment key:</strong> The Attachment Key is a symmetric key used to
+encrypt/decrypt contentID of files attached to messages. Attachment Key is not
+used to encrypt the files.</li>
+<li><strong>Group Secret Sig:</strong> The Signature of the Group Secret by the Group ID
+Private Key (only used in Multi-Member Groups)</li>
+</ul>
+<h4 id="account-group">Account Group</h4>
+<p>The Account Group is the group of all the devices linked to the same Account.
+Devices of the same account need to be in a private group in order to
+communicate with each other and share information about the Account, for
+example the messages sent and received, the groups joined, the contacts added,
+etc&#x2026; The Account Group is only composed of one Group Member, who is the
+account owning all the devices. Every time a new device is linked to the
+Account, it joins the Account Group. The keys and secrets of the Account Group
+are randomly generated at the creation of the account in the same way as in
+Multi-Member Groups.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="account-group" src="../../docs/protocol/SklLFmD_I_huc20146221e3cfe1b2735fc969fc13878_194416_970x0_resize_q100_lanczos_3.webp" width="970" height="515" layout="intrinsic"> <amp-img fallback alt="account-group" src="../../docs/protocol/SklLFmD_I_huc20146221e3cfe1b2735fc969fc13878_194416_970x0_resize_q100_lanczos_3.png" width="970" height="515" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<h4 id="contact-group">Contact Group</h4>
+<p>A Contact Group is a group consisting of exactly two Group Members who are
+Contacts. When an Account adds another Account as a contact, the Contact Group
+is created. The Group Secret, Group ID and Attachment Key are generated by the
+sender of the Contact Request using X25519 key agreement protocol.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="contact-group" src="../../docs/protocol/H1jJ6fvdI_hucf612d77b1691bc36c36bb718ffeab35_237493_970x0_resize_q100_lanczos_3.webp" width="970" height="397" layout="intrinsic"> <amp-img fallback alt="contact-group" src="../../docs/protocol/H1jJ6fvdI_hucf612d77b1691bc36c36bb718ffeab35_237493_970x0_resize_q100_lanczos_3.png" width="970" height="397" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>If the secrets were generated the same way as in a Multi-Member Group and
+Account-Group (i.e. randomly), the lack of synchronization between devices
+could cause the creation of several distinct Contact Groups for the two same
+contacts. Let&#x2019;s suppose that the Contact Group secrets are randomly generated
+by the group creator. Alice sends to Bob a contact request with her device A1
+and Bob accepts the contact request with his device B1. A1 and B1 are now in a
+Contact Group with random secrets that A1 shared with B1. Then A1 and B1 are
+turned offline and A2 and B2 are turned online. A2 is not aware that the
+contact request of Alice has been accepted by Bob, so it sends it again and B2
+accepts the new contact request as it is not aware that a contact request has
+already been accepted by B1. Again A2 generates random secrets and shares them
+with B2, and they are now in a Contact Group which is distinct from the first
+Contact Group since the secrets are different. This situation is avoided if
+secrets are generated deterministically from Alice&#x2019;s and Bob&#x2019;s Account ID key
+pairs.</p>
+<h4 id="multi-member-group">Multi-Member Group</h4>
+<p>A Multi-Member Group is a group of several Group Members who may or may not be
+Contacts. A particularity of a Multi-Member Group is that users will not be
+using their Account ID in the Group, instead they will use a distinct Member
+ID, specific to this Group (derived from the Group ID and some secret
+accounts). Similarly their devices will use a Member Device ID (randomly
+generated). Hence users knowing each other&#x2019;s Account ID (namely contacts) will
+not be able to recognize each other in Multi-Member Groups, unless they want
+to (see <a href="index.html#alias-identity"> Alias Identity
+</a>).</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="multi-member-group" src="../../docs/protocol/HyEDRMvO8_hud566b49a95889a74b1be007152f6144f_274401_970x0_resize_q100_lanczos_3.webp" width="970" height="513" layout="intrinsic"> <amp-img fallback alt="multi-member-group" src="../../docs/protocol/HyEDRMvO8_hud566b49a95889a74b1be007152f6144f_274401_970x0_resize_q100_lanczos_3.png" width="970" height="513" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>Keys and secrets of the multi-member group are randomly generated at the
+creation of the group by the group creator. Once the secrets have been
+generated, the group creator posts an Init Member Entry on the Metadata Log:</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="init-member-entry" src="../../docs/protocol/rkI4GWD_8_hu79eb10812cbfb4d5c894f38af9bd76e8_99920_970x0_resize_q100_lanczos_3.webp" width="970" height="255" layout="intrinsic"> <amp-img fallback alt="init-member-entry" src="../../docs/protocol/rkI4GWD_8_hu79eb10812cbfb4d5c894f38af9bd76e8_99920_970x0_resize_q100_lanczos_3.png" width="970" height="255" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>As shown on the schema above, the Init Member Entry consists of a secret box
+sealed with the Group Secret (<amp-mathml layout="container" data-formula="`G_S`" inline="true">
+</amp-mathml>) containing the following elements:</p>
+<ul>
+<li>The Member ID public key (<amp-mathml layout="container" data-formula="`M_P`" inline="true">
+</amp-mathml>)</li>
+<li>The signature of the Member ID public key (<amp-mathml layout="container" data-formula="`M_P`" inline="true">
+</amp-mathml>) by the Group ID private
+key</li>
+</ul>
+<p>It is omitted on the schema but the secret box is signed with a key derived
+from the Group Secret and the signature is sent along. It is the case for all
+entries posted on the group, to prevent members from trying to decrypt and
+store messages sent by outsiders.</p>
+<p>After posting this entry on the metadata log, the group creator discards the
+Group ID private key. All Members in the Group have the same status, except
+the creator of the group who can be identified with this Init Member Entry.
+However it does not grant them more rights or capabilities than the other
+Members.</p>
+<h5 id="alias-identity">Alias Identity</h5>
+<p>In Multi-Member Groups, users will not be using their Account ID in the Group,
+instead they will use a distinct Member ID, specific to this Group (derived
+from the Group ID and some account&#x2019;s secret). Similarly their devices will use
+a Member Device ID (randomly generated). Hence users knowing someone&#x2019;s Account
+ID will not be able to recognize them in Multi-Member Groups. However, if they
+want to be identified by their contacts, they can share with the group an
+Alias Entry, composed of an Alias Resolver and an Alias Proof:</p>
+<ul>
+<li><strong>Alias Resolver:</strong> an HMAC of the Alias public Key and the Group ID.</li>
+<li><strong>Alias Proof:</strong> the signature of the Alias Resolver by the Alias private key.</li>
+</ul>
+<p>TODO: Add image </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="alias-identity" src="../../docs/protocol/rJP2m-vO8_huff3fa329e351663693e83715b38e55c3_73134_970x0_resize_q100_lanczos_3.webp" width="970" height="256" layout="intrinsic"> <amp-img fallback alt="alias-identity" src="../../docs/protocol/rJP2m-vO8_huff3fa329e351663693e83715b38e55c3_73134_970x0_resize_q100_lanczos_3.png" width="970" height="256" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>The Alias Key Pair is generated at the creation of the Account and the Alias
+Public Key is shared with Contacts once the contact request has been accepted.
+With the Alias Entry, everyone within the group who knows someone&#x2019;s Alias
+public key will be able to identify their Member ID. When a user joins a new
+Multi-Member Group, it computes the Alias Resolver for each of its contacts so
+that whenever an Alias Entry is disclosed by another member, the matching is
+instant.</p>
+<p>Please note that whenever an Alias Entry is disclosed in a Multi-Member Group,
+it cannot be undone. An Alias Entry can only be used to identify a member in
+one particular Multi-Member Group, since the Alias Resolver is derived from
+the Group ID.</p>
+<h2 id="messages">Messages</h2>
+<h3 id="encryption">Encryption</h3>
+<p>In the Wesh protocol, all communications are fully end-to-end encrypted using <a href="https://signal.org/docs/specifications/doubleratchet/#symmetric-key-ratchet" target="_blank" rel="noopener"> Symmetric-key Ratchet
+</a>.
+Every time a user wants to send a message to someone, a Message Key is derived
+from their Chain Key using <a href="https://tools.ietf.org/html/rfc5869" target="_blank" rel="noopener"> HKDF
+</a>.
+The HKDF also updates the Chain Key after each derivation. The Message Key is
+then used to encrypt the message and will not be reused to encrypt other messages.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="symmetric-ratchet" src="../../docs/protocol/BJAQwQP_I_hu579ac811eb7a0841d94c3906dd930ab7_129515_970x0_resize_q100_lanczos_3.webp" width="970" height="625" layout="intrinsic"> <amp-img fallback alt="symmetric-ratchet" src="../../docs/protocol/BJAQwQP_I_hu579ac811eb7a0841d94c3906dd930ab7_129515_970x0_resize_q100_lanczos_3.png" width="970" height="625" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>Each member&#x2019;s device within a group has a different Chain Key. The Group ID is
+included in the parameters of the HKDF to make the derived keys <a href="https://tools.ietf.org/html/rfc5869#section-3.2" target="_blank" rel="noopener"> context-specific
+</a>. At the
+beginning of the conversation members <a href="index.html#new-member-arrival"> share their device&#x2019;s Chain Key
+</a>
+with the other participants. To decrypt messages sent by other participants,
+they have to follow the same process and derive the Message Key from the Chain
+Key of the sender with the HKDF for every message they receive.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="c1">// golang
+</span><span class="c1"></span><span class="kd">func</span> <span class="nf">deriveNextKeys</span><span class="p">(</span><span class="nx">currChainKey</span> <span class="p">[</span><span class="mi">32</span><span class="p">]</span><span class="kt">byte</span><span class="p">,</span> <span class="nx">salt</span> <span class="p">[</span><span class="mi">64</span><span class="p">]</span><span class="kt">byte</span><span class="p">,</span> <span class="nx">groupID</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span>
+   <span class="p">(</span><span class="nx">nextChainKey</span><span class="p">,</span> <span class="nx">nextMsgKey</span> <span class="p">[</span><span class="mi">32</span><span class="p">]</span><span class="kt">byte</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Salt length must be equal to hash length (64 bytes for sha256)
+</span><span class="c1"></span>    <span class="nx">hash</span> <span class="o">:=</span> <span class="nx">sha256</span><span class="p">.</span><span class="nx">New</span>
+
+    <span class="c1">// Generate Pseudo Random Key using currChainKey as IKM and salt
+</span><span class="c1"></span>    <span class="nx">prk</span> <span class="o">:=</span> <span class="nx">hkdf</span><span class="p">.</span><span class="nf">Extract</span><span class="p">(</span><span class="nx">hash</span><span class="p">,</span> <span class="nx">currChainKey</span><span class="p">[:],</span> <span class="nx">salt</span><span class="p">[:])</span>
+    <span class="c1">// Expand using extracted prk and groupID as info (kind of namespace)
+</span><span class="c1"></span>    <span class="nx">kdf</span> <span class="o">:=</span> <span class="nx">hkdf</span><span class="p">.</span><span class="nf">Expand</span><span class="p">(</span><span class="nx">hash</span><span class="p">,</span> <span class="nx">prk</span><span class="p">,</span> <span class="nx">groupID</span><span class="p">)</span>
+
+    <span class="c1">// Generate next chain and message keys
+</span><span class="c1"></span>    <span class="nx">io</span><span class="p">.</span><span class="nf">ReadFull</span><span class="p">(</span><span class="nx">kdf</span><span class="p">,</span> <span class="nx">nextChainKey</span><span class="p">[:])</span>
+    <span class="nx">io</span><span class="p">.</span><span class="nf">ReadFull</span><span class="p">(</span><span class="nx">kdf</span><span class="p">,</span> <span class="nx">nextMsgKey</span><span class="p">[:])</span>
+
+    <span class="k">return</span> <span class="nx">nextChainKey</span><span class="p">,</span> <span class="nx">nextMsgKey</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="joining-a-group">Joining a Group</h3>
+<p>To communicate with other devices (or users), a device (or a user) has to join
+a group. A device (or a user) can only join a group if it is in possession of
+an invitation.</p>
+<h4 id="invitation">Invitation</h4>
+<p>An invitation is composed of the Group ID, the Group Secret, the Group Secret
+Sig and the Attachment Key. An invitation can thus be created by any member of
+the Group. With the invitation, a Wesh user can compute the <a href="index.html#rendezvous-points"> Rendezvous Point
+</a>
+of the Group, which is derived from the Group ID.</p>
+<p>Once the RDV Point has been computed, the user is able to download the
+metadata log on the group and decrypt part of its entries with the Group
+Secret. He will namely obtain the list of all the Group members, which is
+essential to exchange secrets with them and be able to decrypt their messages.</p>
+<h4 id="new-member-arrival">New member arrival</h4>
+<p>Once a user has received an invitation to join a Multi-Member Group and has
+downloaded the metadata log, they have to announce their arrival. To do so,
+they post a Member Entry for each of their devices on the metadata log:</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="new-member-entry-1" src="../../docs/protocol/SkXjmJRvL_hubcad3c126e1a640ede4352d7bc6af6f8_102337_970x0_resize_q100_lanczos_3.webp" width="970" height="310" layout="intrinsic"> <amp-img fallback alt="new-member-entry-1" src="../../docs/protocol/SkXjmJRvL_hubcad3c126e1a640ede4352d7bc6af6f8_102337_970x0_resize_q100_lanczos_3.png" width="970" height="310" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>As shown on the schema above, a Member Entry consists of a secret box sealed
+with the Group Secret (<amp-mathml layout="container" data-formula="`G_S`" inline="true">
+</amp-mathml>) containing the following elements:</p>
+<ul>
+<li>The signature of the Group ID (<amp-mathml layout="container" data-formula="`G_{ID}`" inline="true">
+</amp-mathml>) and the member device ID public key
+(<amp-mathml layout="container" data-formula="`D_P`" inline="true">
+</amp-mathml>) by the member ID secret key (<amp-mathml layout="container" data-formula="`M_S`" inline="true">
+</amp-mathml>)</li>
+<li>The Member ID public key (<amp-mathml layout="container" data-formula="`M_P`" inline="true">
+</amp-mathml>) to verify the signature</li>
+<li>The Device ID public key (<amp-mathml layout="container" data-formula="`D_P`" inline="true">
+</amp-mathml>) to authenticate the new member</li>
+</ul>
+<p>Now that the new member has announced their arrival, they need to exchange
+their chain key with the other members. To do so, for each of their devices
+they post a Secret Entry on the metadata log for each member already in the group:</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="new-member-entry-2" src="../../docs/protocol/Hkn4kg0v8_hu7dd3573c6859dc73daf93a416114d348_141944_970x0_resize_q100_lanczos_3.webp" width="970" height="286" layout="intrinsic"> <amp-img fallback alt="new-member-entry-2" src="../../docs/protocol/Hkn4kg0v8_hu7dd3573c6859dc73daf93a416114d348_141944_970x0_resize_q100_lanczos_3.png" width="970" height="286" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>A Secret Entry consists of a secret box sealed with the Group Secret (<amp-mathml layout="container" data-formula="`G_S`" inline="true">
+</amp-mathml>)
+containing the following elements:</p>
+<ul>
+<li>The Sender Device ID public key (<amp-mathml layout="container" data-formula="`S_P`" inline="true">
+</amp-mathml>)</li>
+<li>The Receiver Member ID public key (<amp-mathml layout="container" data-formula="`R_P`" inline="true">
+</amp-mathml>) so that everyone within the group
+knows to whom the secret entry is addressed to</li>
+<li>A secret box sealed with a shared secret <amp-mathml layout="container" data-formula="`R.S`" inline="true">
+</amp-mathml> that can be computed by both
+the Sender and the Receiver, containing the Sender&#x2019;s Chain Key (<amp-mathml layout="container" data-formula="`CK`" inline="true">
+</amp-mathml>) and its
+current counter.</li>
+</ul>
+<p>This operation is bilateral, once a member has fetched a Secret Entry on the
+metadata log they also post a Secret Entry destined for the new member. In the
+end, everyone has the new member&#x2019;s chain key and the new member has the
+current chain key of every member of the group.</p>
+<h4 id="exchanging-messages">Exchanging messages</h4>
+<p>Now that every member of the group has the chain key of the new member and the
+new member has the chain key of every member of the group, everyone is able to
+send and receive messages. To do so, they have to first derive a Message Key
+from their Chain Key following the <a href="index.html#encryption"> symmetric ratchet protocol
+</a>.</p>
+<p>A Member who wants to send messages to the group has to post a Message Entry
+on the Message Log:</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="message" src="../../docs/protocol/HJ9wKg0PL_hu56e513f85c1eb1cd319a7b5f1dc98d8e_152744_970x0_resize_q100_lanczos_3.webp" width="970" height="313" layout="intrinsic"> <amp-img fallback alt="message" src="../../docs/protocol/HJ9wKg0PL_hu56e513f85c1eb1cd319a7b5f1dc98d8e_152744_970x0_resize_q100_lanczos_3.png" width="970" height="313" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>A Secret Entry consists of a secret box sealed with the Group Secret (<amp-mathml layout="container" data-formula="`G_S`" inline="true">
+</amp-mathml>)
+containing the following elements:</p>
+<ul>
+<li>A secret box sealed by the message key <amp-mathml layout="container" data-formula="`K`" inline="true">
+</amp-mathml> containing the message.</li>
+<li>The signature of this secret box with the Device ID secret key (<amp-mathml layout="container" data-formula="`D_S`" inline="true">
+</amp-mathml>).</li>
+<li>The Device ID public key <amp-mathml layout="container" data-formula="`D_P`" inline="true">
+</amp-mathml> to verify the signature above and identify
+the sender.</li>
+<li>The counter corresponding to the message key.</li>
+</ul>
+<p>Once a member has fetched a message entry from the message log, they have to
+decrypt it using the sender chain key. First they need to rotate the sender&#x2019;s
+chain key until they reach the message counter. Then they need to use the
+message key to decrypt the message.</p>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="message-sym-ratchet" src="../../docs/protocol/B1onw7wdI_huf405b21a247a5fd5caa349dba5e11839_149749_970x0_resize_q100_lanczos_3.webp" width="970" height="472" layout="intrinsic"> <amp-img fallback alt="message-sym-ratchet" src="../../docs/protocol/B1onw7wdI_huf405b21a247a5fd5caa349dba5e11839_149749_970x0_resize_q100_lanczos_3.png" width="970" height="472" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<p>Once the message key has been used, it is discarded because it can decrypt
+only one message.</p>
+<h4 id="security-1">Security</h4>
+<ul>
+<li><strong>Forward Secrecy:</strong> New members are not able to decrypt messages sent
+before their arrival because the Symmetric Ratchet Protocol grants Forward
+Secrecy. Indeed, it is not possible to revert a Chain Key into a previous
+state once it has been derived with the HKDF, and thus it is not possible to
+obtain a Message Key older than the current Chain Key.</li>
+</ul>
+<h4 id="limitations-2">Limitations</h4>
+<ul>
+<li><strong>Invitation expiration:</strong> As discussed earlier, there is no expiration time
+in the Wesh protocol due to its asynchronous nature. Thus invitations do not
+expire, are not nominative and can be used any number of times. Furthermore,
+contrary to the Account RDV Point, the Group RDV Point cannot be renewed at
+will by the Members and thus cannot be used to escape unwanted arrivals.</li>
+<li><strong>Member removal:</strong> A member cannot be removed from a group because it would
+involve the renewing of all the secrets including the members&#x2019; chain keys with
+the constraints that the banned member must not know the new secrets exchanged
+and that some members may not be synchronized with the rest of the group for a
+long period of time. The simplest, less error-prone and clearer way for the
+user, is simply to recreate a new group without the unwanted member. Members
+can willingly leave a group but for the others, there will be no cryptographic
+guarantee that a member has effectively left the group and is not in
+possession of the secrets anymore.</li>
+<li><strong>Scalability:</strong> Since new members have to post a secret entry for every
+member of the group and then have to receive a secret entry from every member
+of the group, a new arrival in a Multi-Member Group can become a very
+expensive process as the Group acquires more and more members. Thus it may be
+required to set a member limit in Multi-Member Groups to ensure the effective
+functioning of the applications using the Wesh protocol.</li>
+<li><strong>Post-compromise secrecy:</strong> There is currently no post-compromise secrecy
+in the Wesh protocol for the same reason there is no member removal. However,
+it could be feasible to renew all the members&#x2019; Chain Keys, for example every
+hundred messages sent to mitigate an eventual unnoticed compromise.</li>
+</ul>
+<h2 id="high-availability">High Availability</h2>
+<p>Since there is no central server in the Wesh protocol, messages and files are
+only stored on users devices. Thus, if a certain device has some information
+and is offline, other devices will not be able to get this information. For
+example, if a user adds a contact with its device A, and turns device A
+offline and then uses device B, device B will not be aware of this new contact
+and will not be able to communicate with it.</p>
+<p>To palliate this problem and provide high availability, the user can set up a
+dedicated device with one of the following configurations: bot account, linked
+device, replication device and replication server.</p>
+<h3 id="bot-account">Bot account</h3>
+<p>A bot account is an account that was created on a dedicated device (e.g a
+server) and added to the user account as a contact. The user will have to
+manually add the bot contact into all its Multi-Member groups. Since nothing
+differentiates a bot account from a user account, this account can do
+everything a user account can do, including sending and reading messages. The
+bot account provides high availability for Multi-Member groups only, since it
+cannot be added to the Contact Group.</p>
+<h3 id="linked-device">Linked device</h3>
+<p>A linked device can be dedicated to replication, however it is only a usage
+difference, and nothing differentiates this device from the other devices
+linked to an account, which means they can read and send messages, as well as
+join groups or link new devices to the account. Linked devices provide high
+availability for every group the account belongs to.</p>
+<h3 id="replication-device">Replication device</h3>
+<p>A replication device is a dedicated device which is linked to an account but
+does not get all the account secrets and is not able to send contact requests
+or link new devices. It is automatically added to all the groups to which the
+account belongs but it does not get any of the group secrets, except the Group
+ID public key, the Group Sig and the Attachment Key. Therefore, it is not able
+to read messages nor to send them. All it can do is store messages and verify
+their authenticity with the Group ID public key, in order to avoid storing
+spam messaging from outside the group. It also needs the Attachment Key in
+order to decrypt an attachment cID and store the attachment.</p>
+<h3 id="replication-server">Replication server</h3>
+<p>A replication server is basically a replication device that is not linked to a
+user account but instead is owned and made available by a third party. Anybody
+can add an existing replication server to a Group (via an API) to provide high
+availability. Like the replication devices, replication servers only get the
+Group ID public key, the Group Sig and the Attachment Key when they are added
+to the groups, and are thus unable to decrypt the messages.</p>
+<h3 id="comparison">Comparison</h3>
+<p> </p><figure class="md-image text-center"> <amp-img class="_to-webp" alt="replication-comparison" src="../../docs/protocol/B1qIgVw_8_hudf7056a22e56889fed192a6586d52d72_347868_970x0_resize_q100_lanczos_3.webp" width="970" height="606" layout="intrinsic"> <amp-img fallback alt="replication-comparison" src="../../docs/protocol/B1qIgVw_8_hudf7056a22e56889fed192a6586d52d72_347868_970x0_resize_q100_lanczos_3.png" width="970" height="606" layout="intrinsic"> </amp-img>
+</amp-img> <figcaption></figcaption>
+</figure>
+<p></p>
+<h2 id="implementation-details">Implementation Details</h2>
+<h3 id="specificities-of-direct-transport">Specificities of direct transport</h3>
+<p>When a Wesh user connects to another Wesh user with direct transports, the
+first thing they do is send a list of all the RDV Points on which they are
+listening: their Public RDV Point (for contact requests) and all RDV Points of
+Groups to which they belong. If the second user is already listening on some
+of these RDV Points, they will both be able to communicate in those Groups
+using direct transports.</p>
+<p>For example, if Alice and Bob are contacts, they will both listen on the RDV
+Point of their contact group and thus when Alice will send all her RDV Points
+to Bob he will see that they have an RDV Point in common, and he will be able
+to send her messages within their contact group. The same thing is valid for
+Multi-Member Groups.</p>
+<p>Thus direct transports are not using a DHT like IPFS and this is a synchronous
+communication protocol since both devices need to be connected to each other
+in order to exchange messages. This aside, the Wesh protocol works exactly
+the same way.</p>
+<blockquote>
+<p>&#x26A0;&#xFE0F; Warning</p>
+<p>If Alice sends all her RDV Points to Bob, he could make deductions on
+her true identity in Multi-Member Groups. Bob will indeed know all the Groups
+to which he and Alice belong and may be able to link different Member IDs in
+different Groups to Alice.</p>
+</blockquote>
+<h3 id="cryptography">Cryptography</h3>
+<h4 id="key-types">Key Types</h4>
+<p>All key pairs used in the Wesh protocol are X25519 for encryption and Ed25519
+for signature, for two main reasons:</p>
+<ul>
+<li>These are <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8951-CryptoAuth-RSA-ECC-Comparison-Embedded-Systems-WhitePaper.pdf" target="_blank" rel="noopener"> smaller
+</a>
+than RSA key pairs for the same level of security which means, less data to
+store and smaller payload to send over the network.</li>
+<li>Elliptic Curve Cryptography is also <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8951-CryptoAuth-RSA-ECC-Comparison-Embedded-Systems-WhitePaper.pdf" target="_blank" rel="noopener"> faster
+</a>
+than the RSA algorithm, especially on private key operations, which means less
+CPU consumption and thus a longer battery life on mobile devices.</li>
+</ul>
+<h4 id="golang-packages">Golang Packages</h4>
+<p>Most of the crypto libs used in the Wesh protocol are packages included in
+the standard Go library:</p>
+<ul>
+<li> <a href="https://pkg.go.dev/crypto/sha256" target="_blank" rel="noopener"> crypto/sha256
+</a></li>
+<li> <a href="https://pkg.go.dev/crypto/rand" target="_blank" rel="noopener"> crypto/rand
+</a></li>
+<li> <a href="https://pkg.go.dev/golang.org/x/crypto/nacl/box" target="_blank" rel="noopener"> x/crypto/nacl/box
+</a></li>
+<li> <a href="https://pkg.go.dev/golang.org/x/crypto/nacl/secretbox" target="_blank" rel="noopener"> x/crypto/nacl/secretbox
+</a></li>
+<li> <a href="https://pkg.go.dev/golang.org/x/crypto/hkdf" target="_blank" rel="noopener"> x/crypto/hkdf
+</a></li>
+<li> <a href="https://pkg.go.dev/golang.org/x/crypto/ed25519" target="_blank" rel="noopener"> x/crypto/ed25519
+</a></li>
+</ul>
+<p>The only non-standard packages used in the Wesh protocol are the following
+two, although they have been written by experts are widely reviewed by the
+community:</p>
+<ul>
+<li> <a href="https://pkg.go.dev/github.com/libp2p/go-libp2p-core/crypto" target="_blank" rel="noopener"> libp2p/go-libp2p-core/crypto
+</a></li>
+<li> <a href="https://pkg.go.dev/github.com/agl/ed25519/extra25519" target="_blank" rel="noopener"> agl/ed25519/extra25519
+</a></li>
+</ul> </div> </div> <div class="col-md-2"> <div class="block-doc-nav"> <h6><i class="far fa-align-left"></i>&#xA0;&#xA0;Contents</h6> <div class="js-toc"></div> </div> </div> </div> <section class="section-actions d-none"> <a class="btn btn-bty btn-grack mb-3" href="https://github.com/berty/www.berty.tech/edit/master/bertytech/content/docs/protocol/index.md" target="_blank" rel="noopener"> <i class="fab fa-github"></i>Edit on github </a> <div class="mb-3"> <a class="btn btn-bty btn-blue" href="https://github.com/sponsors/berty" target="_blank"> <i class="hover-hide far fa-heart"></i><i class="hover-show fas fa-heart"></i>Support our work
+</a> </div> <a class="block block-action bg-blue bg-gradient" href="../index.html"> <h4><i class="far fa-arrow-left left"></i>Back to docs</h4> </a> </section> </div>
+</div> <script src="../../js/tocbot.min.js"></script>
+<script type="text/javascript">
+
+	document.addEventListener("DOMContentLoaded", function() {
+		
+   		tocbot.init({
+		  tocSelector: '.js-toc',
+		  contentSelector: '.js-toc-content',
+		  headingSelector: 'h1, h2, h3, h4, h5, h6',
+		  hasInnerContainers: true,
+		  orderedList: false,
+		});
+		
+		document.querySelectorAll('.block-doc-content h1, .block-doc-content h2, .block-doc-content h3, .block-doc-content h4, .block-doc-content h5, .block-doc-content h6').forEach($heading => {
+			var id = $heading.getAttribute("id");
+			$heading.classList.add('anchor-heading');
+			$anchor = document.createElement('a');
+			$anchor.className = 'anchor-link toc-link';
+			$anchor.href = '#' + id;
+			$anchor.innerText = '#';
+			$heading.appendChild($anchor);
+		});
+	});
+</script> <footer class="overflow-hidden"> <div class="footer-rounded bg-blue text-white"> <div class="container"> <div class="row row-top"> <div class="col-md-5"> <amp-img class="_to-webp img-fluid img-bt" alt="Berty Technologies" src="../../img/berty_technologies_logo.webp" width="352" height="145" layout="responsive"> <amp-img fallback alt="Berty Technologies" src="../../img/berty_technologies_logo.png" width="352" height="145" layout="responsive"> </amp-img>
+</amp-img> <br> <p>The Berty app is developed by the NGO <a href="https://berty.tech/about">Berty Technologies</a>.</p> </div> <div class="col-md-7"> <div class="row"> <div class="col-4 col-links"> <h5><a href="https://berty.tech/features">Features</a></h5> <h5><a href="https://berty.tech/challenges">Challenges</a></h5> <h5><a href="https://berty.tech/faq">FAQ</a></h5> <h5><a href="https://berty.tech/community">Community</a></h5> <h5><a href="https://berty.tech/blog">Blog</a></h5> </div> <div class="col-4 col-links"> <h5>Developers</h5> <ul class="list-unstyled text-small"> <li><a href="../index.html#projects">Our projects</a></li> <li><a href="https://berty.tech/contribute">Contribute</a></li> </ul> </div> <div class="col-4 col-links"> <h5><a href="https://berty.tech/about">About us</a></h5> <ul class="list-unstyled text-small"> <li><a href="https://berty.tech/contribute#projects-we-love">Partners</a></li> <li><a href="https://berty.crew.work/jobs" target="_blabk">Jobs</a></li> <li><a href="https://berty.tech/newsletter">Newsletter</a></li> <li><a href="https://berty.tech/contact">Contact</a></li> <li><a href="https://berty.tech/press">Press</a></li> <li><a href="https://berty-tech.myshopify.com/">Boutique</a></li> <li><a href="https://assets.berty.tech/">Assets</a></li> </ul> </div> </div> </div> </div> <div class="row row-bottom"> <div class="col-lg-8 col-md-7 footer-legal"> <small>Berty&#x2122; is a registered trademark &#xA9; 2018-2023 Berty Technologies - All right reserved - <a href="https://berty.tech/terms">Terms &amp; Conditions</a> - <a href="https://berty.tech/privacy-policy">Privacy Policy</a> </small> </div> <div class="col-lg-4 col-md-5"> <ul class="nav nav-social"> <li class="nav-item"> <a class="nav-link" href="https://crpt.fyi/berty-discord" target="_blank" rel="noopener" aria-label="Discord"> <i class="fab fa-discord"></i> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://twitter.com/berty" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fab fa-twitter"></i> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://github.com/berty" target="_blank" rel="noopener" aria-label="Github"> <i class="fab fa-github"></i> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://medium.com/berty-tech" target="_blank" rel="noopener" aria-label="Medium"> <i class="fab fa-medium"></i> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://www.linkedin.com/company/berty" target="_blank" rel="noopener" aria-label="Linkedin"> <i class="fab fa-linkedin"></i> </a> </li>
+</ul> </div> </div> </div> </div>
+</footer> <script type="text/javascript" src="../../bundle.min.js"></script> <script async defer src="https://sa.berty.tech/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript> </body></html>
